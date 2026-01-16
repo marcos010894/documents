@@ -19,8 +19,14 @@ depends_on: Union[str, Sequence[str], None] = None
 
 
 def upgrade() -> None:
-    # Adicionar coluna permissions JSON
-    op.add_column('user_business_links', sa.Column('permissions', sa.JSON(), nullable=True))
+    # Check if column exists before adding
+    conn = op.get_bind()
+    inspector = sa.inspect(conn)
+    columns = [col['name'] for col in inspector.get_columns('user_business_links')]
+    
+    if 'permissions' not in columns:
+        # Adicionar coluna permissions JSON
+        op.add_column('user_business_links', sa.Column('permissions', sa.JSON(), nullable=True))
 
 
 def downgrade() -> None:
