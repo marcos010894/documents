@@ -1,14 +1,14 @@
-# fly.toml app configuration file generated for ged-frontend on 2025-12-08T11:49:23Z
+# fly.toml app configuration file generated for globaltty-frontend on 2025-12-08T11:49:23Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'ged-frontend'
+app = 'globaltty-frontend'
 primary_region = 'gru'
 
 [build]
   [build.args]
-    VITE_API_URL = "http://127.0.0.1:8000"
+    VITE_API_URL = "https://api-globaltty3-little-sea-9182.fly.dev"
 
 [http_service]
   internal_port = 80
