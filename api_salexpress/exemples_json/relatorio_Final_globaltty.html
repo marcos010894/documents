@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Visita</title>
+    <style>
+        /* Contêiner principal que utiliza display flex */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            /* Permite quebrar a linha quando necessário */
+            gap: 20px;
+            /* Espaçamento entre as colunas e linhas */
+            justify-content: center;
+            /* Alinha os itens ao centro */
+            width: 100%;
+            /* Ocupa toda a largura da tela */
+            box-sizing: border-box;
+            /* Considera padding e margin no cálculo do tamanho */
+        }
+
+        /* Estilo para cada item (imagem + descrição) */
+        .item {
+            width: calc(50% - 10px);
+            /* 50% da largura da tela, com espaçamento entre as colunas */
+            box-sizing: border-box;
+            text-align: center;
+            /* Centraliza a descrição abaixo da imagem */
+        }
+
+        .item img {
+            width: 100%;
+            /* A imagem ocupa toda a largura do item */
+            height: auto;
+            /* Mantém a proporção da imagem */
+        }
+
+        /* Responsividade: para telas menores, usa 100% da largura */
+        @media (max-width: 768px) {
+            .item {
+                width: 100%;
+                /* No celular, as imagens ficam em uma única coluna */
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fefefe;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #cc5500;
+            border-radius: 10px;
+            background-color: rgba(255, 246, 230, 0.9);
+            background-size: 300px;
+            /* Ajuste o tamanho da marca d'água */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .title {
+            text-align: center;
+            color: #cc5500;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            color: #cc5500;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            padding: 10px;
+            border: 1px solid #cc5500;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #cc5500;
+            padding: 8px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #ffcc99;
+            color: #333;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .flex-item {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #cc5500;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        textarea {
+            width: 90%;
+            height: 100px;
+            border: 1px solid #cc5500;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        td img {
+            width: 250px;
+        }
+
+        .assinatura-container {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #fff;
+            padding: 10px 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            width: auto;
+            /* Ajusta automaticamente à largura do conteúdo */
+            max-width: 100%;
+            /* Previne que o contêiner exceda o tamanho do pai */
+        }
+
+        .selo {
+            flex-shrink: 0;
+            margin-right: 10px;
+        }
+
+        .selo img {
+            max-width: 50px;
+            height: auto;
+            display: block;
+        }
+
+        .assinatura-dados {
+            line-height: 1.4;
+        }
+
+        .assinatura-dados p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .assinatura-dados p span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Relatório de Visita</div>
+        <div class="section">
+            <div class="section-title">Dados da Visita</div>
+            <div class="content">
+                <p><strong>Data:</strong> 25 de novembro de 2024</p>
+                <p><strong>Objetivo da visita:</strong> Auditoria para verificação de conformidades regulatórias</p>
+                <p><strong>Empresa:</strong> Indústria Alimentícia São Paulo Ltda.</p>
+                <p><strong>Unidade:</strong> Unidade de Embalagem</p>
+                <p><strong>Ramo de atividade:</strong> Fabricação de alimentos embalados</p>
+                <p><strong>Representantes acionados durante a visita:</strong> João Silva (Gerente de Qualidade), Maria
+                    Souza (Supervisor de Operações)</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">Realizada por</div>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <strong>Nome:</strong> Ana Paula Mendes
+                </div>
+                <div class="flex-item">
+                    <strong>Formação:</strong> Engenharia de Alimentos
+                </div>
+                <div class="flex-item">
+                    <strong>Ident. Conselho de Classe:</strong> CREA-SP 1234567
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">Itens Verificados</div>
+            <div class="content">
+                <ul>
+                    <li>1 – Assuntos Regulatórios</li>
+                    <li>2 – Controle de Documentos</li>
+                    <li>3 – Treinamento</li>
+                    <li>4 – Controle de Pragas</li>
+                    <li>5 – Limpeza e Caixa d’água</li>
+                    <li>6 – Qualificação de Fornecedores</li>
+                    <li>7 – Não Conformidades</li>
+                    <li>8 – Instrumentos e Equipamentos</li>
+                    <li>9 – Reclamação/Devolução/Recall</li>
+                    <li>10 – Saúde e Segurança</li>
+                    <li>11 – Operacional</li>
+                    <li>12 – Inventário</li>
+                    <li>13 – Produtos não Conformes</li>
+                    <li>14 – Considerações Gerais</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">Avaliação Assuntos Regulatórios</div>
+            <div style="border: 1px solid #cc5500; padding: 10px;">
+
+                <h3>1.2 CNPJ disponível? Sim</h3>
+                <p>Descrição:</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+
+                <P>Fotos: </P>
+                <div class="gallery">
+                    <div class="item">
+                        <img src="http://Salexpress.com/aplicativorelatorios/view/uploads/17380678558817010100399699591605.jpg"
+                            alt="Descrição da imagem 1">
+                        <p>Descrição da imagem 1</p>
+                    </div>
+                    <div class="item">
+                        <img src="http://Salexpress.com/aplicativorelatorios/view/uploads/17380678558817010100399699591605.jpg"
+                            alt="Descrição da imagem 2">
+                        <p>Descrição da imagem 2</p>
+                    </div>
+                    <div class="item">
+                        <img src="http://Salexpress.com/aplicativorelatorios/view/uploads/17380678558817010100399699591605.jpg"
+                            alt="Descrição da imagem 3">
+                        <p>Descrição da imagem 3</p>
+                    </div>
+                    <div class="item">
+                        <img src="http://Salexpress.com/aplicativorelatorios/view/uploads/17380678558817010100399699591605.jpg"
+                            alt="Descrição da imagem 4">
+                        <p>Descrição da imagem 4</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="section">
+            <div class="section-title">Assinatura Digital</div>
+
+            <div class="assinatura-container">
+                <div class="selo">
+                    <img src="https://Salexpress.com/assets/images/fvincon.png" alt="Selo de Verificação">
+                </div>
+                <div class="assinatura-dados">
+                    <p><span>Nome:</span> João da Silva</p>
+                    <p><span>Data:</span> 23/12/2024</p>
+                    <p style="font-size: 8px;">Assinado pela Salexpress.com</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

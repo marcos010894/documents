@@ -1,0 +1,74 @@
+terão alguns tipos de permissões
+
+O SalexpressAdm ira gerenciar tudo da globatty.
+O admBusness ira gerenciar os dados da conta dele, com permissão total
+o admFreelancer ira gerenciar os dados da conta dele, com permissão total porem, o freelnacer
+pode ter acesso a mais de uma empresa, então, no tabela de permissões, ele tera acesso de acrodo
+{
+    ver: vai ver os dados da empresa compartilhados com ele.
+    gerenciar: Ver, editar e compartilhar,
+    administar: mesmas permissões do adm
+}
+
+demais permissões para outros usuario:
+    ver: vai ver os dados da empresa compartilhados com ele.
+    gerenciar: Ver, editar e compartilhar,
+    administar: mesmas permissões do adm
+
+
+
+
+Planos de permissões:
+MKTFREE {
+    Pode:
+    - Cadastrar 1 usuário (empresa ou autônomo)
+    - Adicionar informações básicas de contato
+    - Inserir link do site ou LinkedIn
+    - Descrever serviços/produtos de forma ilimitada
+    - Divulgar no Nível 4 de visibilidade
+}
+
+MKTBASIC {
+    Inclui MKTFREE, mais:
+    - Inserção de logomarca no perfil
+    - Informar licenças e certificados
+    - Acesso a painel gerencial com:
+        - Visitas ao perfil
+        - Palavras-chave mais buscadas
+    - Divulgar no Nível 3 de visibilidade
+}
+
+MKTPRO {
+    Inclui MKTBASIC, mais:
+    - Página exclusiva para divulgação dos serviços
+    - Link direto para contato via WhatsApp
+    - Link para avaliações no perfil
+    - Divulgar no Nível 2 de visibilidade
+    - Acesso ao Banco de Negócios (visualização de demandas e envio de propostas)
+}
+
+MKTCORP {
+    Inclui MKTPRO, mais:
+    - Página exclusiva para divulgação de produtos ou serviços (voltado para empresas)
+    - Até 2 usuários por empresa
+    - Participação no Banco de Negócios para todas as categorias:
+        - Empresas
+        - Freelancers
+        - Autônomos
+    - Divulgar no Nível 2 de visibilidade
+}
+
+MKTPREMIUM {
+    Inclui MKTCORP, mais:
+    - 1 banner em destaque por até 30 dias a cada trimestre
+    - 1 artigo técnico/comercial com logomarca no blog Salexpress (a cada trimestre)
+        - Enviado ao mailing do Marketplace Salexpress
+    - 1 gravação de até 1 hora com conteúdo técnico/comercial para o canal Cámila Farmas
+    - Upgrade para Nível 1 de visibilidade
+}
+
+MKTSPECIAL {
+    Inclui MKTPREMIUM, mais:
+    - Oportunidades exclusivas sob demanda para divulgação e parcerias personalizadas
+    - Condições e benefícios ajustados conforme necessidade do cliente (sob consulta)
+}

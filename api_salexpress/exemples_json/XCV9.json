@@ -1,0 +1,1034 @@
+{
+    "Visita Tecnica": {
+        "Objetivo da visita": "Visita Técnica ",
+        "Data": "29/01/2025",
+        "Realizado por": [
+            {
+                "nome": "Karina Youssef ",
+                "Ident. Conselho de Classe": "101291",
+                "formação": "Farmacêutica",
+                "assinatura": "joaodasilva.png"
+            }
+        ],
+        "Empresa": "AMAZON SERVIÇOS DE VAREJO /LUFT SOLUTIONS LOGÍSTICA",
+        "Unidade": "XCV9 – CNPJ: 15.436.940/0008-71",
+        "Ramo_atividade": "Armazenagem ",
+        "Representantes acionados durante a visita": [
+            {
+                "nome": "Vinicius Souza -HSE, Hector Recabarrel - ICQA, Neide -Verzani"
+            }
+        ]
+    },
+    "AVALIAÇÃO ASSUNTOS REGULATÓRIOS": {
+        "Contrato Social disponível? Qual alteração?": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "Inscrição Municipal disponível? Qual número?": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "CNPJ disponível?": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "Inscrição Estadual disponível? Qual número?": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "AVCB disponível? Qual validade?": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ],
+            "Se estiver em período de renovação, incluir número e data do protocolo": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            }
+        },
+        "LTA disponível? Qual o número?": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "Houve alguma alteração na infraestrutura da empresa que impacte no LTA válido? Se sim, esta alteração foi protocolada junto a Vigilância Sanitária?": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ],
+            "Licença de Funcionamento disponível? Qual validade?": {
+                "descricao": "",
+                "disponivel_na": "não aplicável",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Se estiver em período de renovação, incluir número e data do protocolo": {
+                "descricao": "Licença Sanitária em renovação conforme protocolo 9949",
+                "disponivel_na": "sim",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            }
+        },
+        " Registro de Responsabilidade Técnica disponível? Qual validade?": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ],
+            "Se estiver em período de renovação, incluir número e data do protocolo": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            }
+        },
+        "Certificado CETESB disponível? Qual a validade?": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "OBSERVAÇÕES": {
+            "descricao": "",
+            "imagens": [
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/IMG-20250130-WA0011.jpg",
+                    "desc": "Protocolo de renovação."
+                }
+            ]
+        }
+    },
+    "CONTROLE DE DOCUMENTOS": {
+        "O Manual da Qualidade encontra-se disponível? Descrever identificação do Manual e validade do documento": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "Os procedimentos de qualidade encontram-se disponíveis? Descrever identificação de procedimentos e validade por amostragem": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "O Manual Operacional encontra-se disponível? Descrever identificação do Manual e validade do document": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "Há registros em uso nos processos da empresa? Verificar registro em uso quanto a identificação, boas práticas de preenchimento e arquivo por amostragem": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "OBSERVAÇÕES": {
+            "descricao": "",
+            "imagens": [
+                "Sem imagem"
+            ]
+        }
+    },
+    "TREINAMENTO": {
+        "Os registros de treinamento encontram-se disponíveis? Descrever registro de treinamento por amostragem": {
+            "descricao": "Treinamento de Boas Práticas REG-004 VS.04 realizado em 11/04/2024.",
+            "disponivel_na": "sim",
+            "imagens": [
+                "Sem imagem"
+            ],
+            "items": [
+                {
+                    "titulo": "Boas Práticas ",
+                    "data": "11/04/2024",
+                    "quem_realizou": "Karina Youssef",
+                    "onde_esta_aquivado": "Pasta de documentos Luft."
+                }
+            ]
+        },
+        "OBSERVAÇÕES": {
+            "descricao": "Necessário aplicação de treinamento de Boas Práticas ao novos colaboradores HSE. ",
+            "imagens": [
+                "Sem imagem"
+            ]
+        }
+    },
+    "CONTROLE DE PRAGAS": {
+        "Ausência de vetores e pragas urbanas ou qualquer evidência de sua presença como fezes, ninhos e outros.": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381735388658568360518699439285.jpg",
+                    "desc": " Presença de Teia de aranha e aranha em posições Rua 208-P1B."
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381782163616740935319437927388.jpg",
+                    "desc": "Presença de teia de aranha."
+                }
+            ]
+        },
+        " As iscas estão em bom estado de Conservação?": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "O serviço de controle de Pragas foi realizado de acordo com o cronograma? Descrever data do último serviço": {
+            "descricao": "Verificado em iscas realização do serviço em 01/25.",
+            "disponivel_na": "sim",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "Descrever número do Certificado/Ordem de Serviço": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "OBSERVAÇÕES": {
+            "descricao": "",
+            "imagens": [
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381731630432005952761154234415.jpg",
+                    "desc": "Isca 159 com presença de sujidades. Sugere-se troca."
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381731630432005952761154234415.jpg",
+                    "desc": "Isca 159 com presença de sujidades. Sugere-se troca."
+                }
+            ]
+        }
+    },
+    "LIMPEZA E CAIXA D’ÁGUA": {
+        "A área externa encontra-se em boas condições de limpeza e conservação?": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "A área de armazenagem encontra-se em boas condições de limpeza e conservação?": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "Os sanitários e vestiários encontram-se em boas condições de limpeza e conservação?": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "Os registros de limpeza encontram-se disponíveis e o preenchimento está sendo realizado corretamente?": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "Os registros anteriores encontram-se arquivados e devidamente preenchidos? Registro verificado (mês correspondente)": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "A limpeza da Caixa D’água está atualizada? Descrever a data do último serviço e validade": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "OBSERVAÇÕES": {
+            "descricao": "Verificado desde visita anterior: \nBebedouros de água da unidade apresentam alguns com a etiqueta de manutenção de filtro devidamente atualizada, enquanto outros não possuem a etiqueta atualizada.\n\n\nNesta visita\nVerificado que produto da área DML UHS LIMPADOR foi retirado da unidade.",
+            "imagens": [
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381744220551461318456271085047.jpg",
+                    "desc": "Hidrante 48 com presença de sumidades, necessário limpeza."
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381767250628397725233846927719.jpg",
+                    "desc": "Presença de lodo (mofo) em Máquina de fita gomada em mesas faturamento leve. necessário realizar a limpeza periódica. "
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381767250628397725233846927719.jpg",
+                    "desc": "Presença de lodo (mofo) em Máquina de fita gomada em mesas faturamento leve. necessário realizar a limpeza periódica. "
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381770553974577934227578099590.jpg",
+                    "desc": "Equipamento VGA 46 com excesso de sujidade e embalagens abertas. Necessário limpeza."
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381770553974577934227578099590.jpg",
+                    "desc": "Equipamento VGA 46 com excesso de sujidade e embalagens abertas. Necessário limpeza."
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381770553974577934227578099590.jpg",
+                    "desc": "Equipamento VGA 46 com excesso de sujidade e embalagens abertas. Necessário limpeza."
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/173817719576132009193051878953.jpg",
+                    "desc": "Presença de material de limpeza disposto sem suporte frente doca 137, Necessário inserção de suporte."
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/173817719576132009193051878953.jpg",
+                    "desc": "Presença de material de limpeza disposto sem suporte frente doca 137, Necessário inserção de suporte."
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381785873806482280676675785941.jpg",
+                    "desc": "Guard Rail com excesso de sujidade. Necessário limpeza."
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381802393161619062252475931081.jpg",
+                    "desc": "Verificado processo de limpeza de carrinho, sendo realizado conforme demanda da operação."
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381802393161619062252475931081.jpg",
+                    "desc": "Verificado processo de limpeza de carrinho, sendo realizado conforme demanda da operação."
+                }
+            ]
+        }
+    },
+    "QUALIFICAÇÃO DE FORNECEDORES": {
+        "Os fornecedores críticos encontram-se devidamente qualificados?": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "Registrar uma evidencia de fornecedor Qualificado": {
+            "Fornecedor": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Serviço/produto fornecido": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Data da Qualificação": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Status": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            }
+        },
+        "O fornecedor qualificado citado em 6.1 apresentou não conformidades durante a qualificação?": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ],
+            "Se sim, as não conformidades foram resolvidas ou estão em tratativa dentro do prazo apresentado pelo fornecedor para resolução?": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            }
+        },
+        "Evidenciar rastreabilidade de produto/serviço fornecido": {
+            "Data": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Produto/serviço": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            }
+        },
+        "observacao": {
+            "descricao": "Sugere-se inserção de fornecedor de Limpeza como sendo crítico no POP de Qualificação de Fornecedores.\n\n Definir as responsabilidades de gestão dos SOPs LUFT que fazem parte dos processos Amazon. ",
+            "imagens": [
+                "Sem imagem"
+            ]
+        }
+    },
+    "NÃO CONFORMIDADES": {
+        "Ocorreram situações de não conformidades deste a última auto inspeção?": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ],
+            "Se sim, estas foram registrados conforme procedimento?": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Número da Não Conformidade": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Data do registro": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "As ações encontram-se implementadas ou dentro do prazo de implementação?": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            }
+        },
+        "observacao": {
+            "descricao": "",
+            "imagens": [
+                "Sem imagem"
+            ]
+        }
+    },
+    "INSTRUMENTOS E EQUIPAMENTOS": {
+        "A empresa utiliza instrumentos e equipamentos que necessitam de calibração? Se sim, estão calibrados? Registrar um instrumento/equipamento por amostragem": {
+            "Identificação do equipamento": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Data da calibração": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "O equipamento foi calibrado dentro da faixa de trabalho?": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "O Certificado de calibração do padrão encontra-se disponível?": {
+                "descricao": "Via Sistema Salexpress ",
+                "disponivel_na": "sim",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Os demais equipamentos utilizados no processo operacional encontram-se em bom estado de conservação e manutenção?": {
+                "descricao": "",
+                "disponivel_na": "sim",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            }
+        },
+        "observacao": {
+            "descricao": "Resta aquisição do instrumento DTH-006, unidade encontra-se com 05 instrumentos de medição, necessário 06 instrumentos. Informado durante visita que foi solicitado a compra de dois termohigrometros.\n\nAtualizada Lista de Controle de Equipamentos no sistema Salexpress, necessário impressão e arquivamento na pasta de LUFT. registros https://www.globalty.com.br/download.php?id=20012&hash=192809fd5e230cce09a3dc8a34fa39a4\n\n\n",
+            "imagens": [
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381751629841140197872582966945.jpg",
+                    "desc": "Verificar do registro de temperatura instrumento DTH-004, com registros até 32?C em 01/25."
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/Screenshot_20250130_181841_Samsung Notes.jpg",
+                    "desc": "Verificado em visitas anteriores em ainda sem resolução: • Conforme verificação dos registros de temperatura da unidade, o perfil térmico do FC não atende o requisito de armazenamento de produtos de temperatura ambiente e/ou 15-30°C previsto nas embalagens de alguns produtos. É necessário verificar junto a Amazon a armazenagem destes, sendo pontuado desde relatório do dia 03/07/2024, produtos com requisitos de Temperatura."
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/Screenshot_20250130_181841_Samsung Notes.jpg",
+                    "desc": "Verificado em visitas anteriores em ainda sem resolução: • Conforme verificação dos registros de temperatura da unidade, o perfil térmico do FC não atende o requisito de armazenamento de produtos de temperatura ambiente e/ou 15-30°C previsto nas embalagens de alguns produtos. É necessário verificar junto a Amazon a armazenagem destes, sendo pontuado desde relatório do dia 03/07/2024, produtos com requisitos de Temperatura."
+                }
+            ]
+        }
+    },
+    "RECLAMAÇÃO/ DEVOLUÇÃO/ RECALL": {
+        "Foi registrada alguma reclamação de cliente deste a última auto inspeção?": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ],
+            "Data da reclamação": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Cliente": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Ocorrência": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Procedência": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Se procedente, a tratativa foi eficaz para a ocorrência (avaliar se houve recorrência)?": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            }
+        },
+        "Houve devolução desde a última auto inspeção?": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ],
+            "Se sim, o produto permaneceu/permanece armazenado em área segregada? Descrever por amostragem: Produto": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Data de armazenagem": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Ocorrência que ocasionou a devolução": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            }
+        },
+        "Houve necessidade de Recall desde a última auto inspeção?": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ],
+            "Se sim, o processo foi realizado de acordo com o procedimento? Descrever por amostragem: Produto": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Data de início e fim do processo:": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Ocorrência que ocasionou o recall:": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            }
+        },
+        "observacao": {
+            "descricao": "",
+            "imagens": [
+                "Sem imagem"
+            ]
+        }
+    },
+    "SAÚDE E SEGURANÇA": {
+        "Identificação": {
+            "descricao": "Amostrados extintores com verificação check-list em 12/24.",
+            "disponivel_na": "sim",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "Condições do lacre": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "Validade recarga": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "Funcionários estão utilizando EPI?": {
+            "descricao": "",
+            "disponivel_na": "sim",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "PPRA e PCMSO estão disponíveis e válidos?": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "Exames médicos admissionais, periódicos e demissionais estão sendo realizados? Se sim descrever por amostragem:": {
+            "Data do exame:": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Tipo do exame": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Área de trabalho do funcionário": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            }
+        },
+        "OBSERVAÇÕES": {
+            "descricao": "",
+            "imagens": [
+                "Sem imagem"
+            ]
+        }
+    },
+    "OPERACIONAL": {
+        "A área de recebimento encontra-se devidamente identificada?": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "Os produtos estão sendo recebidos nas docas definidas para este fim?": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "Houve recebimento de produtos deste a última auto inspeção? Se sim, descrever por amostragem:": {
+            "Produto recebido": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Data": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Nota Fiscal": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "O último recebimento apresentou ocorrências/divergências?": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Se sim, foram tratadas de acordo com o procedimento?": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            " Os produtos recebidos foram devidamente registrados no sistema WMS?": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            }
+        },
+        " Há produtos armazenados? Se sim, efetuar rastreabilidade de processo entre sistema WMS e armazenagem física": {
+            "Produto": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Lote (quando aplicável)": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Posição de armazenagem prevista no WMS": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Posição de armazenagem real": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Quantidade armazenada na posição real": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Rastreabilidade de armazenagem entre sistema WMS e físico estão OK?": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "As posições de armazenagem estão devidamente identificadas?": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            }
+        },
+        "Houve expedição de produtos desde a última auto inspeção? Se sim, descrever por amostragem:": {
+            "Produto expedido": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Data": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "Nota Fiscal": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            },
+            "O comprovante de entrega do produto está disponível?": {
+                "descricao": "",
+                "disponivel_na": "não",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            }
+        },
+        "OBSERVAÇÕES": {
+            "descricao": "Verificado desde visita anterior e ainda sem resolução:\n\nRetorno de produto Máquina Nespresso que acompanha CÁPSULAS DE CAFÉ. Produtos acompanhados de alimentos devem ser considerados alimentos devido prazo de validade das cápsulas. Necessário verificar junto ao inbound que todas as máquinas que acompanham cápsulas sejam inseridas no sistema com prazo de validade e armazenadas nas ruas destinadas a alimentos. Amostragem: P1B-244-C470 (Cápsulas com prazo de validade até 31/07/2025), P1F-833-J784. Informado pelo time LUFT que foi aberto ticket com Amazon para inserção de data de vencimento das cápsulas.\n\n\nRUAS SANEANTES P1B e P1F• P1B/P1F\n\n - Verificado mistura de categorias em bins destinados a saneantes. Há bins com produtos de higiene pessoal (Sabonete de higienização de mãos armazenados junto a produtos saneantes). Recorrente.o Necessário realocar todos os produtos de higiene pessoal para ruas destinadas a esta categoria, retirando-os das ruas destinadas a saneantes. o Necessário criar bloqueio de stow para outras categorias na área de saneantes, de forma evitar que outras categorias sejam armazenadas ou retreinamento dos colaboradores, de forma a facilitar entendimento e diferenciação entre produtos como: Sabonete de higienização de mãos (HIGIENE PESSOAL) e produto de limpeza (SANEANTES) com mesma volumetria de sabonetes. Amostragem: P1B-259-E472, P1B-264-C490",
+            "imagens": [
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381755072058361298129576179275.jpg",
+                    "desc": "Produto alimento Bin 602-G462 com alimento vencido"
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381759952823551452795881966331.jpg",
+                    "desc": "Kit com 04 leites Aptanutri posição 601-J620 Sem etiqueta de validade no lado externo da caixa."
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381759952823551452795881966331.jpg",
+                    "desc": "Kit com 04 leites Aptanutri posição 601-J620 Sem etiqueta de validade no lado externo da caixa."
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381760156185856815319949609585.jpg",
+                    "desc": "Embalagem avariada"
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381760156185856815319949609585.jpg",
+                    "desc": "Embalagem avariada"
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381760156185856815319949609585.jpg",
+                    "desc": "Embalagem avariada"
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381762100015499385713706057040.jpg",
+                    "desc": "Posição com vazamento de produto saneante."
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381762747041250134940901549655.jpg",
+                    "desc": "Produto seaneante armazenado de forma errônea, Necessária armazenamento dos produtos em pé."
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381762747041250134940901549655.jpg",
+                    "desc": "Produto seaneante armazenado de forma errônea, Necessária armazenamento dos produtos em pé."
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381764200624761525586766681522.jpg",
+                    "desc": "Bin com sumidades de vazamento de saneantes."
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381779969925978743035702603907.jpg",
+                    "desc": "Produto PET armazenado em rua não destinada a esta categoria."
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381779969925978743035702603907.jpg",
+                    "desc": "Produto PET armazenado em rua não destinada a esta categoria."
+                }
+            ]
+        }
+    },
+    "inventario": {
+        "Está definida a periodicidade de inventários de estoque? Se sim: qual a periodicidade?": {
+            "descricao": "",
+            "disponivel_na": "sim",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "Foram realizados inventários deste a última auto inspeção?": {
+            "descricao": "",
+            "disponivel_na": "sim",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "Se sim, o resultado do inventário atendeu os índices contratuais e/ou indicadores internos? Data de inventário": {
+            "descricao": "",
+            "disponivel_na": "sim",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        " As ações corretivas para o inventário foram implementadas ou estão dentro do prazo?": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "observacao": {
+            " As ações corretivas para o inventário foram implementadas ou estão dentro do prazo?": {
+                "descricao": "Verificado que desde implementação da rotina de inspeção periódica da ruas de medicamentos PET pelo time de inventário, área não possui mais apontamentos quanto a presença de alimentos em área de PET.",
+                "imagens": [
+                    "Sem imagem"
+                ]
+            }
+        }
+    },
+    "PRODUTOS NÃO CONFORMES": {
+        "Foram identificados produtos não conformes desde a última auto inspeção? Se sim descrever por amostragem": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "Produto": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "Lote (quando aplicável):": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "Motivo": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "Quantidade": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "O produto está ou foi mantido em posição segregada até sua destinação final?": {
+            "descricao": "",
+            "disponivel_na": "não",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "observacao": {
+            "descricao": "",
+            "imagens": [
+                "Sem imagem"
+            ]
+        }
+    },
+    "MANUTENÇÃO": {
+        "observacao": {
+            "descricao": "",
+            "imagens": [
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381743408588361625717503797348.jpg",
+                    "desc": "Verificado presença de goteira 276-P1B"
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381743408588361625717503797348.jpg",
+                    "desc": "Verificado presença de goteira 276-P1B"
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381743408588361625717503797348.jpg",
+                    "desc": "Verificado presença de goteira 276-P1B"
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381743408588361625717503797348.jpg",
+                    "desc": "Verificado presença de goteira 276-P1B"
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381744220551461318456271085047.jpg",
+                    "desc": "Hidrante 48 com presença de sujidades, necessário limpeza."
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381744220551461318456271085047.jpg",
+                    "desc": "Hidrante 48 com presença de sujidades, necessário limpeza."
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381746784851352455336723337707.jpg",
+                    "desc": "Presença De goteira próximo à rua 416-P1D"
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381748610681548324221411539997.jpg",
+                    "desc": "Presença De goteira próximo à rua 523-P1E"
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381774179752607639644652697347.jpg",
+                    "desc": "Climatizados 16 com excesso de poeira."
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381774179752607639644652697347.jpg",
+                    "desc": "Climatizados 16 com excesso de poeira."
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381799033985900955979538942323.jpg",
+                    "desc": "Doca desnivelada, permitindo entrada de pragas."
+                },
+                {
+                    "url": "http://Salexpress.com/aplicativorelatorios/view/uploads/17381799033985900955979538942323.jpg",
+                    "desc": "Doca desnivelada, permitindo entrada de pragas."
+                }
+            ]
+        }
+    },
+    "CONSIDERAÇÕES GERAIS": {
+        "observacao": {
+            "descricao": "Unidade encontra-se em processo de renovação de licença, sendo passível de inspeção pela VISA.",
+            "imagens": [
+                "Sem imagem"
+            ]
+        },
+        "itens_verificados": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+        ]
+    }
+}

@@ -1,0 +1,61 @@
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info
+dist
+build
+.venv
+venv
+env
+
+# IDEs
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Git
+.git
+.gitignore
+
+# Docs
+*.md
+docs/
+
+# Tests
+tests/
+pytest_cache/
+.coverage
+htmlcov/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+chat_history.db
+
+# Reports
+reports/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Alembic cache
+alembic/__pycache__
+alembic/versions/__pycache__
+
+# Exemplos
+exemples_json/
+
+# Arquivos de configuração local
+.env.local

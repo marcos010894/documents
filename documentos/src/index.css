@@ -1,0 +1,392 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Layout específico para painel - aplicado via classes */
+
+.painel-layout {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.painel-layout body {
+    height: 100%;
+    overflow: hidden;
+}
+
+
+/* Animações MELHORADAS */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: scale(0.9) translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Animações para menu e breadcrumb */
+.animate-shimmer {
+    animation: shimmer 3s infinite;
+}
+
+.hover\:scale-102:hover {
+    transform: scale(1.02);
+}
+
+.hover\:scale-105:hover {
+    transform: scale(1.05);
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.3s ease-out;
+}
+
+.animate-slideIn {
+    animation: slideIn 0.3s ease-out;
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.2s ease-out;
+}
+
+.animate-fade-in-down {
+    animation: fadeInDown 0.2s ease-out;
+}
+
+.animate-shake {
+    animation: shake 0.3s ease-in-out;
+}
+
+.animate-scale-in {
+    animation: scaleIn 0.2s ease-out;
+}
+
+.animate-slide-in-left {
+    animation: slideInLeft 0.3s ease-out;
+}
+
+/* Smooth transitions globais */
+* {
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.lng-images {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.colorwhite_ {
+    background-color: white;
+}
+
+.background_white {
+    background-color: white;
+}
+
+.position_initial_imgs_lng {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+}
+
+
+/* src/components/Loading.css */
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.loading-spinner {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input:checked+span {
+    background-color: #e0e1e0;
+    /* Cor do fundo quando marcado */
+}
+
+input:checked+span::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 6px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: 2px solid white;
+    /* Cor do checkmark */
+    transform: rotate(45deg);
+    border: solid rgb(0, 0, 0);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.img_chat_bot {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.virtual_ass {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.virtual_ass_text {
+    margin-left: 25px;
+    max-width: 500px;
+    word-wrap: break-word;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.peple_ass {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.peple_ass_text {
+    margin-left: 25px;
+    max-width: 500px;
+    word-wrap: break-word;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+/* CSS media query dentro de um stylesheet */
+
+@media (max-width: 600px) {
+    .img_chat_bot {
+        display: none;
+    }
+    .steps {
+        display: none;
+    }
+    .p-16 {
+        padding: 2rem;
+    }
+}
+
+.mensages {
+    overflow: auto;
+}
+
+.division_items {
+    position: relative;
+}
+
+.input_mensage {
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textareaChat {
+    width: 100%;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.textareaChat:focus {
+    width: 100%;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.textareaChatDiv {
+    margin-right: 10px;
+    width: 80%;
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animate-slide-in-left {
+    animation: slide-in-left 0.3s ease-out forwards;
+}
+
+.bgwhite,
+.bg-white {
+    background-color: white;
+}
+
+.text-white {
+    color: white;
+}
+
+
+/* Estilos para modal em tela cheia */
+
+.fullscreen-modal:fullscreen {
+    background-color: white !important;
+    border-radius: 0 !important;
+    max-width: 100vw !important;
+    max-height: 100vh !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.fullscreen-modal:fullscreen .overflow-auto {
+    height: calc(100vh - 80px) !important;
+}
+
+
+/* Para navegadores WebKit (Safari, Chrome) */
+
+.fullscreen-modal:-webkit-full-screen {
+    background-color: white !important;
+    border-radius: 0 !important;
+    max-width: 100vw !important;
+    max-height: 100vh !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.fullscreen-modal:-webkit-full-screen .overflow-auto {
+    height: calc(100vh - 80px) !important;
+}
+
+
+/* Para navegadores Microsoft */
+
+.fullscreen-modal:-ms-fullscreen {
+    background-color: white !important;
+    border-radius: 0 !important;
+    max-width: 100vw !important;
+    max-height: 100vh !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.fullscreen-modal:-ms-fullscreen .overflow-auto {
+    height: calc(100vh - 80px) !important;
+}

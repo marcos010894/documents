@@ -1,0 +1,77 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        volkhov: ["Volkhov", "serif"],
+      },
+      colors: {
+        orange: {
+          light: "#fdf3ec",
+          lightHover: "#fcece3",
+          lightActive: "#f8d9c5",
+          normal: "#f37329",
+          normalHover: "#d2763c",
+          normalActive: "#ba6936",
+          dark: "#af6232",
+          darkHover: "#8c4f28",
+          darkActive: "#693b1e",
+          darker: "#522e17",
+        },
+        green: {
+          light: "#e3f3ed",
+          lightHover: "#d6e9dc",
+          lightActive: "#ccd8c7",
+          normal: "#92b549",
+          normalHover: "#507542",
+          normalActive: "#427b33",
+          dark: "#345237",
+          darkHover: "#3a5c42",
+          darkActive: "#283a21",
+          darker: "#1f281a",
+        },
+        yellow: {
+          light: "#fdf3ec",
+          lightHover: "#fcf4e4",
+          lightActive: "#f8e8c8",
+          normal: "#b98646",
+          normalHover: "#ad9446",
+          normalActive: "#b69436",
+          dark: "#8c7833",
+          darkHover: "#8e6632",
+          darkActive: "#683922",
+          darker: "#51401b",
+        },
+        black: {
+          light: "#e6e6e6",
+          lightHover: "#dadae8",
+          lightActive: "#b2b2b2",
+          normal: "#707070",
+          normalHover: "#606060",
+          normalActive: "#606060",
+          dark: "#505050",
+          darkHover: "#404040",
+          darkActive: "#303030",
+          darker: "#202020",
+        },
+        white: {
+          light: "#ffffff",
+          lightHover: "#ffffff",
+          lightActive: "#ffffff",
+          normal: "#ffffff",
+          normalHover: "#e6e6e6",
+          normalActive: "#c0c0c0",
+          dark: "#bfbfbf",
+          darkHover: "#999999",
+          darkActive: "#737373",
+          darker: "#595959",
+        },
+      }
+    },
+  },
+  plugins: [],
+}

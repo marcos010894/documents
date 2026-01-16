@@ -1,0 +1,345 @@
+import { Check, X, ChevronRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { api as useApi } from '../../../services/api';
+import { useState } from 'react';
+
+const SubscriptionPlans = () => {
+  const navigate = useNavigate();
+  const { api } = useApi();
+  const [isConsultant, setIsConsultant] = useState(false);
+  const [showPasswordModal, setShowPasswordModal] = useState(false);
+  const [password, setPassword] = useState('');
+  const [passwordError, setPasswordError] = useState('');
+  
+  const user = localStorage.getItem("infosUserLogin");
+  let info;
+  if (user) {
+    info = JSON.parse(user);
+  }
+  const userId = info.user.id;
+  const typeUser = info.tipo
+  const emailUser = info.user.email
+
+  const handleConsultantClick = () => {
+    setShowPasswordModal(true);
+    setPassword('');
+    setPasswordError('');
+  };
+
+  const handlePasswordSubmit = () => {
+    if (password === 'SOUSalexpress90') {
+      setIsConsultant(true);
+      setShowPasswordModal(false);
+      setPassword('');
+      setPasswordError('');
+    } else {
+      setPasswordError('Senha incorreta');
+    }
+  };
+
+  const handleCloseModal = () => {
+    setShowPasswordModal(false);
+    setPassword('');
+    setPasswordError('');
+  };
+
+  const generateLinkPlan = async (priceID: string, planSelectInfo: string) => {
+    if (priceID == 'free') {
+      navigate('/login')
+      return
+    }
+
+    try {
+      const response = await api.get<{
+        redirect: {
+          checkout_url: string;
+        };
+      }>(`/v1/subscription/subscriptionlink/payamentLink`, {
+        params: {
+          price_id: priceID,
+          email_client: emailUser,
+          id_user: userId,
+          type_user: typeUser,
+          plan: planSelectInfo
+        }
+      });
+
+      if (response.data?.redirect?.checkout_url) {
+        window.open(response.data.redirect.checkout_url, "_blank");
+      } else {
+        throw new Error('No checkout URL found in response');
+      }
+    } catch (error) {
+      console.error('Error during subscription:', error);
+      // Handle error appropriately (e.g., show error message to user)
+    }
+  }
+
+  // Dados completos dos planos conforme a imagem
+  const plans = [
+    {
+      id: 1,
+      name: 'Grátis',
+      price: 0,
+      priceText: 'Grátis para sempre',
+      billingInfo: 'Até 01 usuário',
+      buttonText: 'Experimente grátis',
+      description: 'Para quem quer divulgar seu negócio/especialidade',
+      popular: false,
+      features: [
+        'Cadastro de 1 usuário para empresa ou profissional autônomo',
+        'Informações básicas de contato',
+        'Link do site ou LinkedIn',
+        'Descrição ilimitada de serviços, produtos ou especialidades',
+        'Nível 4 de divulgação'
+      ],
+      planSelectInfo: 'MKTFREE',
+      priceID: 'free',
+      promotionLevel: 4
+    },
+    {
+      id: 2,
+      name: 'Básico',
+      price: 50,
+      priceText: 'Usuário/mês',
+      billingInfo: 'ou R$ 600,00 cobrados anualmente',
+      buttonText: 'Quero esse Plano',
+      description: 'Logomarca inclusa e Painel com Gestão de acessos ao Perfil',
+      popular: true,
+      priceID: 'price_1RSRQPBHToUdUF6aDosxIzQZ',
+      planSelectInfo: 'MKTBASIC',
+      features: [
+        'Tudo do plano Grátis, mais:',
+        'Inclusão da Logomarca',
+        'Informações de Licenças e Certificados',
+        'Acesso Painel gerencial com informações de visitas ao seu perfil',
+        'Palavras-chaves mais buscadas',
+        'Upgrade para nível 3 de divulgação'
+      ],
+      promotionLevel: 3
+    },
+    {
+      id: 3,
+      name: typeUser == 'Freelancer' ? 'Profissional' : 'Coporatativo',
+      price: isConsultant ? 10 : (typeUser == 'Freelancer' ? 100 : 200),
+      priceText: 'Usuário/mês',
+      billingInfo: isConsultant ? 'ou R$ 120,00 cobrados anualmente' : 'ou R$ 1.200,00 cobrados anualmente',
+      buttonText: 'Quero esse Plano',
+      description: 'Freelancer/Autônomo tenha sua própria página receba avaliações',
+      popular: false,
+      priceID: isConsultant ? 'price_1RYTIJBHToUdUF6aHPQSnXpH' : (typeUser == 'Freelancer' ? 'price_1RVnTDBHToUdUF6a7oZqu1Pp' : 'price_1RVnSvBHToUdUF6armda27eO'),
+      planSelectInfo: typeUser == 'Freelancer' ? 'MKTPRO' : 'MKTCORP',
+      features: [
+        'Tudo do plano Básico, mais:',
+        'Página exclusiva para divulgação de serviços',
+        'Link de contato via WhatsApp',
+        'Link para avaliações do Perfil',
+        'Upgrade para nível 2 de divulgação',
+        'Participa do Banco de Negócios para Freelancers/autônomos'
+      ],
+      promotionLevel: 2
+    }
+  ];
+
+  // Todos os benefícios para a tabela comparativa
+  const allFeatures = [
+    'Cadastro de usuário',
+    'Informações básicas de contato',
+    'Link do site/LinkedIn',
+    'Descrição ilimitada',
+    'Nível de divulgação',
+    'Inclusão da Logomarca',
+    'Licenças e Certificados',
+    'Painel gerencial de acessos',
+    'Palavras-chaves mais buscadas',
+    'Página exclusiva',
+    'Link WhatsApp',
+    'Avaliações do Perfil',
+    'Banco de Negócios'
+  ];
+
+
+  return (
+    <div className="bg-gray-50 text-gray-800 p-6 font-sans min-h-screen">
+      <header className="flex justify-center mb-8">
+        <img
+          src="https://www.Salexpress.com/assets/images/logopadrao.png"
+          alt="Global TTY Logo"
+          className="h-16"
+        />
+      </header>
+
+      <h1 className="text-4xl font-bold text-center mb-2 text-gray-900">Escolha o Plano Ideal</h1>
+      <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
+        Encontre a solução perfeita para suas necessidades de telecomunicações
+      </p>
+
+      {/* Botão Sou um consultor */}
+      <div className="text-center mb-8">
+        <button
+          onClick={handleConsultantClick}
+          className="bg-red-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-red-700 transition-colors duration-300"
+        >
+          {isConsultant ? '✓ Sou um consultor' : 'Sou um consultor globatty'}
+        </button>
+      </div>
+
+      {/* Cards de Planos */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-6xl mx-auto">
+        {plans.map((plan) => (
+          <div
+            key={plan.id}
+            className={`bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border ${plan.popular ? 'border-2 border-red-600 transform hover:scale-105' : 'border-gray-100'
+              } relative flex flex-col h-full`}
+          >
+            {plan.popular && (
+              <div className="absolute top-0 right-0 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">
+                MAIS POPULAR
+              </div>
+            )}
+
+            <div className="flex-grow">
+              <h2 className="text-2xl font-bold mb-2 text-gray-800">{plan.name}</h2>
+
+              <div className="mb-4">
+                <p className="text-3xl font-bold text-gray-900">
+                  {plan.price === 0 ? 'Grátis' : `R$ ${plan.price.toFixed(2).replace('.', ',')}`}
+                </p>
+                <p className="text-gray-600 text-sm">{plan.priceText}</p>
+                {plan.billingInfo && <p className="text-gray-500 text-xs mt-1">{plan.billingInfo}</p>}
+              </div>
+
+              <p className="text-gray-700 mb-6 italic">{plan.description}</p>
+
+              <ul className="space-y-3 mb-8">
+                {plan.features.map((feature, index) => (
+                  <li key={index} className="flex items-start">
+                    <ChevronRight className="h-4 w-4 mr-2 mt-1 text-red-600 flex-shrink-0" />
+                    <span className="text-gray-700 text-sm">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <button
+              onClick={() => generateLinkPlan(plan.priceID, plan.planSelectInfo)}
+              className={`w-full px-6 py-3 rounded-lg font-medium transition-colors duration-300 mt-auto ${plan.popular
+                ? 'bg-red-600 text-white shadow-md hover:bg-red-700 hover:shadow-lg'
+                : plan.price === 0
+                  ? 'bg-gray-100 text-gray-800 hover:bg-gray-200'
+                  : 'bg-red-600 text-white hover:bg-red-700'
+                }`}
+            >
+              {plan.buttonText}
+            </button>
+          </div>
+        ))}
+      </div>
+
+      {/* Tabela Comparativa Completa */}
+      <div className="max-w-6xl mx-auto mb-16">
+        <h2 className="text-2xl font-bold mb-6 text-center text-gray-900">
+          Comparação detalhada dos planos
+        </h2>
+
+        <div className="overflow-x-auto bg-white rounded-xl shadow-md">
+          <table className="min-w-full">
+            <thead>
+              <tr className="bg-gray-100 text-left">
+                <th className="py-4 px-6 font-semibold text-gray-700">Benefícios</th>
+                {plans.map((plan) => (
+                  <th key={plan.id} className="py-4 px-6 text-center font-semibold text-gray-700">
+                    {plan.name}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200">
+              {allFeatures.map((feature, index) => (
+                <tr key={index}>
+                  <td className="py-3 px-6 font-medium text-sm">{feature}</td>
+                  {plans.map((plan) => {
+                    // Lógica para determinar se o recurso está incluído no plano
+                    let included = false;
+                    let specialValue = '';
+
+                    if (feature.includes('Nível de divulgação')) {
+                      specialValue = `Nível ${plan.promotionLevel}`;
+                    } else if (
+                      (feature === 'Cadastro de usuário' && plan.id >= 1) ||
+                      (feature === 'Informações básicas de contato' && plan.id >= 1) ||
+                      (feature === 'Link do site/LinkedIn' && plan.id >= 1) ||
+                      (feature === 'Descrição ilimitada' && plan.id >= 1) ||
+                      (feature === 'Inclusão da Logomarca' && plan.id >= 2) ||
+                      (feature === 'Licenças e Certificados' && plan.id >= 2) ||
+                      (feature === 'Painel gerencial de acessos' && plan.id >= 2) ||
+                      (feature === 'Palavras-chaves mais buscadas' && plan.id >= 2) ||
+                      (feature === 'Página exclusiva' && plan.id >= 3) ||
+                      (feature === 'Link WhatsApp' && plan.id >= 3) ||
+                      (feature === 'Avaliações do Perfil' && plan.id >= 3) ||
+                      (feature === 'Banco de Negócios' && plan.id >= 3)
+                    ) {
+                      included = true;
+                    }
+
+                    return (
+                      <td key={plan.id} className="text-center py-3 px-6">
+                        {specialValue ? (
+                          <span className="text-red-600 font-medium">{specialValue}</span>
+                        ) : included ? (
+                          <Check className="h-5 w-5 mx-auto text-green-500" />
+                        ) : (
+                          <X className="h-5 w-5 mx-auto text-red-400" />
+                        )}
+                      </td>
+                    );
+                  })}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* Modal de Senha para Consultor */}
+      {showPasswordModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white p-8 rounded-xl shadow-lg max-w-md w-full mx-4">
+            <h3 className="text-xl font-bold mb-4 text-gray-900">Acesso Consultor</h3>
+            <p className="text-gray-600 mb-4">Digite a senha para acessar preços especiais:</p>
+            
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              onKeyPress={(e) => e.key === 'Enter' && handlePasswordSubmit()}
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Digite a senha"
+            />
+            
+            {passwordError && (
+              <p className="text-red-500 text-sm mb-4">{passwordError}</p>
+            )}
+            
+            <div className="flex gap-3">
+              <button
+                onClick={handlePasswordSubmit}
+                className="flex-1 bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors"
+              >
+                Confirmar
+              </button>
+              <button
+                onClick={handleCloseModal}
+                className="flex-1 bg-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-400 transition-colors"
+              >
+                Cancelar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default SubscriptionPlans;

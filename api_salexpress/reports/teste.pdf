@@ -1,0 +1,528 @@
+
+            <!DOCTYPE html>
+            <html lang="pt-BR">
+
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Relatório de Visita</title>
+        <style>
+        /* Contêiner principal que utiliza display flex */
+            .gallery {
+                    text-align: center;
+                    width: 100%;
+                }
+
+                .item {
+                    display: inline-block;
+                    width: 45%;
+                    margin: 10px;
+                    text-align: center;
+                    vertical-align: top;
+                }
+
+                .item img {
+                    width: 100%;
+                    height: auto;
+
+                }
+                @media (max-width: 768px) {
+                    .item {
+                        width:25%;
+                    }
+                }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fefefe;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #cc5500;
+            border-radius: 10px;
+            background-color: rgba(255, 246, 230, 0.9);
+            background-size: 300px;
+            /* Ajuste o tamanho da marca d'água */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .title {
+            text-align: center;
+            color: #cc5500;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            color: #cc5500;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            padding: 10px;
+            border: 1px solid #cc5500;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #cc5500;
+            padding: 8px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #ffcc99;
+            color: #333;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .flex-item {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #cc5500;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        textarea {
+            width: 90%;
+            height: 100px;
+            border: 1px solid #cc5500;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        td img {
+            width: 250px;
+        }
+
+        .assinatura-container {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #fff;
+            padding: 10px 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            width: auto;
+            /* Ajusta automaticamente à largura do conteúdo */
+            max-width: 100%;
+            /* Previne que o contêiner exceda o tamanho do pai */
+        }
+
+        .selo {
+            flex-shrink: 0;
+            margin-right: 10px;
+        }
+
+        .selo img {
+            max-width: 50px;
+            height: auto;
+            display: block;
+        }
+
+        .assinatura-dados {
+            line-height: 1.4;
+        }
+
+        .assinatura-dados p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .assinatura-dados p span {
+            font-weight: bold;
+        }
+
+    </style>
+            </head>
+
+            <body>
+             
+
+    
+        <div class="container">
+                    <img src="https://www.globalty.com.br/img/logo2.png" style="width:100px" />
+                    <div class="title">Relatório de Visita</div>
+                    <div class="section">
+                        <div class="section-title">Dados da Visita</div>
+                        <div class="content">
+                            <p><strong>Data:</strong> 21/10/2025</p>
+                            <p><strong>Objetivo da visita:</strong> Luft Kronolog - Visita Tecnica para inicio do projeto de LTA e Licenciamento da Unidade </p>
+                            <p><strong>Empresa:</strong>Kronolog </p>
+                            <p><strong>Unidade:</strong> Luft - Extrema/MG  </p>
+                            <p><strong>Ramo de atividade:</strong> 5211-7/99 Depósitos de mercadorias para terceiros, exceto armazéns gerais e guarda móveis</p>
+                            <p><strong>Representantes acionados durante a visita:</strong> Gilson Pereira e Cordenadoras Operação Multiclientes </p>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="section-title">Realizada por</div>
+                        <div class="flex-container">
+                            <div class="flex-item">
+                                <strong>Nome:</strong> Camila Solano Machado, Jose Anderson Ribeiro da Silva, Julia Lopes Smania  
+                            </div>
+                            <div class="flex-item">
+                                <strong>Formação:</strong> Farmacêutica e Engenheiro 
+                            </div>
+                            <div class="flex-item">
+                                <strong>Ident. Conselho de Classe:</strong> CRF-SP / CREA 
+                            </div>
+                        </div>
+                    </div>
+                    
+            
+                        <div class="section">
+                            <div class="section-title">ASSUNTOS REGULATÓRIOS</div>
+
+                        
+                                <div style="border: 1px solid #cc5500; padding: 10px;">
+                                            <h3>Observação:</h3>
+                                            <p style="display: block"><p>A unidade <span class="fontstyle0">LUFT SOLUTIONS LOGISTICA LTDA, CNPJ 06.288.375/0012-38 necessita de altera&ccedil;&atilde;so de seu CNPJ para inclus&atilde;o do CNAE 5211-7/99 Dep&oacute;sitos de mercadorias para terceiros, exceto armaz&eacute;ns gerais e guarda m&oacute;veis para que as regulariza&ccedil;&otilde;es sanit&aacute;rias possam ser iniciadas jutno ao CRF e Vigil&acirc;ncia Sanit&aacute;ria.&nbsp;</span></p> </p>                                              
+                                            <P style="display: none">Fotos: </P>
+                                            <div class="gallery">
+                                                    
+                                            </div>      
+                                        </div>
+                        
+                            </div>
+                            
+                        <div class="section">
+                            <div class="section-title">CONTROLE DE DOCUMENTOS</div>
+
+                        
+                                <div style="border: 1px solid #cc5500; padding: 10px;">
+                                            <h3>Observação:</h3>
+                                            <p style="display: block"><p>Os documentos do Sistema de Gest&atilde;o da Qualidade ser&atilde;o implementados ap&oacute;s a ativa&ccedil;&atilde;o da Responsabilidade T&eacute;cnica na unidade.&nbsp;</p> </p>                                              
+                                            <P style="display: none">Fotos: </P>
+                                            <div class="gallery">
+                                                    
+                                            </div>      
+                                        </div>
+                        
+                            </div>
+                            
+                        <div class="section">
+                            <div class="section-title">TREINAMENTO</div>
+
+                        
+                                <div style="border: 1px solid #cc5500; padding: 10px;">
+                                            <h3>Observação:</h3>
+                                            <p style="display: none"> </p>                                              
+                                            <P style="display: none">Fotos: </P>
+                                            <div class="gallery">
+                                                    
+                                            </div>      
+                                        </div>
+                        
+                            </div>
+                            
+                        <div class="section">
+                            <div class="section-title">CONTROLE DE PRAGAS</div>
+
+                        
+                                <div style="border: 1px solid #cc5500; padding: 10px;">
+                                            <h3>Observação:</h3>
+                                            <p style="display: block"><p>A unidade n&atilde;o tem implementado o Programa de Controle de Pragas. Necess&aacute;rio para inciar opera&ccedil;&otilde;es com produtos de interesse a Sa&uacute;de, al&eacute;m da veda&ccedil;&atilde;o de frestas (docas, portas de emerg&ecirc;nias e ventila&ccedil;&atilde;o), de forma a evitar o acesso de pragas.&nbsp;</p>
+<p>A divis&atilde;o lateral esquerda e direita, que pertencem a outra empresa, s&atilde;o mais baixas que o teto, podendo-se constituir em uma forma de acesso de pragas a &aacute;rea da LUFT, principalmente voadores.&nbsp;&nbsp;</p>
+<p><em><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong></em></p> </p>                                              
+                                            <P style="display: none">Fotos: </P>
+                                            <div class="gallery">
+                                                    
+                                            </div>      
+                                        </div>
+                        
+                            </div>
+                            
+                        <div class="section">
+                            <div class="section-title">LIMPEZA E CAIXA D’ÁGUA</div>
+
+                        
+                                                <div style="border: 1px solid #cc5500; padding: 10px;">
+                                                        <h3> A área externa encontra-se em boas condições de limpeza e conservação? : não aplicável</h3>
+                                                        <p style="display: block;">Descrição:</p>
+                                                        <p style="display: block; margin-left: 5px"> Área externa da unidade encontra-se em bons estados. </p>
+                                                        <P style="display: none" >Fotos: </P>
+                                                        <div  class="gallery">
+                                                                
+                                                        </div>      
+                                                    </div>
+                                                
+                                                <div style="border: 1px solid #cc5500; padding: 10px;">
+                                                        <h3> A área de armazenagem encontra-se em boas condições de limpeza e conservação? : não aplicável</h3>
+                                                        <p style="display: block;">Descrição:</p>
+                                                        <p style="display: block; margin-left: 5px"> Ideal que assim que houver impletanção de Limpeza da unidade ela seja mais efetiva. </p>
+                                                        <P style="display: none" >Fotos: </P>
+                                                        <div  class="gallery">
+                                                                
+                                                        </div>      
+                                                    </div>
+                                                
+                                <div style="border: 1px solid #cc5500; padding: 10px;">
+                                            <h3>Observação:</h3>
+                                            <p style="display: block"><p>Necess&aacute;rio implementa&ccedil;&atilde;o de rotinas padronziadas de limpeza e organiza&ccedil;&atilde;o inclundo:&nbsp;</p>
+<ul>
+<li>Implementa&ccedil;&atilde;o de Check Lists de limpeza, treinamento da equipe, gest&atilde;o dos materiais utilizados, DML com tanque, suporte para fixar vassouras e outros utens&iacute;lio sde limpeza no armaz&eacute;m.&nbsp;</li>
+<li>Suporte de &aacute;gua para cosumo deve ter limpeza peri&oacute;dica; gal&otilde;es n&atilde;o devem permanecer diretamente em contato com o piso e o Certificado de Qualidade da &aacute;gua deve ser solicitado ao fornecedor.&nbsp;&nbsp;</li>
+</ul> </p>                                              
+                                            <P style="display: none">Fotos: </P>
+                                            <div class="gallery">
+                                                    
+                                            </div>      
+                                        </div>
+                        
+                            </div>
+                            
+                        <div class="section">
+                            <div class="section-title">QUALIFICAÇÃO DE FORNECEDORES</div>
+
+                        
+                                <div style="border: 1px solid #cc5500; padding: 10px;">
+                                            <h3>Observação:</h3>
+                                            <p style="display: block"><p>Ap&oacute;s o inicio da opera&ccedil;&atilde;o todos os fornecedores da unidade teram que ser qualificados.&nbsp;</p> </p>                                              
+                                            <P style="display: none">Fotos: </P>
+                                            <div class="gallery">
+                                                    
+                                            </div>      
+                                        </div>
+                        
+                            </div>
+                            
+                        <div class="section">
+                            <div class="section-title">NÃO CONFORMIDADES</div>
+
+                        
+                                <div style="border: 1px solid #cc5500; padding: 10px;">
+                                            <h3>Observação:</h3>
+                                            <p style="display: block"><p>Ap&oacute;s o inicio da opera&ccedil;&atilde;o os pontos de n&atilde;o conformidade caso haja sera notificado&nbsp;</p> </p>                                              
+                                            <P style="display: none">Fotos: </P>
+                                            <div class="gallery">
+                                                    
+                                            </div>      
+                                        </div>
+                        
+                            </div>
+                            
+                        <div class="section">
+                            <div class="section-title">INSTRUMENTOS E EQUIPAMENTOS</div>
+
+                        
+                                <div style="border: 1px solid #cc5500; padding: 10px;">
+                                            <h3>Observação:</h3>
+                                            <p style="display: block"><p>Unidade n&atilde;o disp&otilde;e de Termohigr&ocirc;metro para monitorameno de temperatura e umidade. Sugerida aquisi&ccedil;&atilde;o de 02 a 03 equipamentos.&nbsp;&nbsp;</p> </p>                                              
+                                            <P style="display: none">Fotos: </P>
+                                            <div class="gallery">
+                                                    
+                                            </div>      
+                                        </div>
+                        
+                            </div>
+                            
+                        <div class="section">
+                            <div class="section-title">RECLAMAÇÃO/ DEVOLUÇÃO/ RECALL</div>
+
+                        
+                                <div style="border: 1px solid #cc5500; padding: 10px;">
+                                            <h3>Observação:</h3>
+                                            <p style="display: none"> </p>                                              
+                                            <P style="display: none">Fotos: </P>
+                                            <div class="gallery">
+                                                    
+                                            </div>      
+                                        </div>
+                        
+                            </div>
+                            
+                        <div class="section">
+                            <div class="section-title">SAÚDE E SEGURANÇA</div>
+
+                        
+                                                <div style="border: 1px solid #cc5500; padding: 10px;">
+                                                        <h3> PPRA e PCMSO estão disponíveis e válidos? : não aplicável</h3>
+                                                        <p style="display: block;">Descrição:</p>
+                                                        <p style="display: block; margin-left: 5px"> Solicitar PCMSO para a empresa, enviado apenas o PGR </p>
+                                                        <P style="display: none" >Fotos: </P>
+                                                        <div  class="gallery">
+                                                                
+                                                        </div>      
+                                                    </div>
+                                                
+                                <div style="border: 1px solid #cc5500; padding: 10px;">
+                                            <h3>Observação:</h3>
+                                            <p style="display: block"><ul>
+<li>A empresa possui extintores de incendio pela opera&ccedil;&atilde;o mais a visita na unidade teve como foco defini&ccedil;&atilde;o posi&ccedil;&otilde;es de&nbsp; LTA e conhecimento inicial da opera&ccedil;&atilde;o , n&atilde;o foram observados na visita tecnica mais sera ponto verificado na proxima visita.&nbsp;</li>
+</ul> </p>                                              
+                                            <P style="display: none">Fotos: </P>
+                                            <div class="gallery">
+                                                    
+                                            </div>      
+                                        </div>
+                        
+                            </div>
+                            
+                        <div class="section">
+                            <div class="section-title">OPERACIONAL</div>
+
+                        
+                                <div style="border: 1px solid #cc5500; padding: 10px;">
+                                            <h3>Observação:</h3>
+                                            <p style="display: block"><ul>
+<li>A unidade esta com o processo de Recebimento, armazenagem e expedi&ccedil;&otilde;es para produtos que n&atilde;o tem o fim de Licenciamento Sanitario at&eacute; o momento.&nbsp;</li>
+<li>Necess&aacute;rio identifica&ccedil;&atilde;o das docas, &aacute;reas de recebimento, armazenagem, confer&ecirc;ncia e expedi&ccedil;&atilde;o&nbsp; onde n&atilde;o trabalham com demarca&ccedil;&otilde;es e docas destinadas para a atividade.&nbsp;</li>
+<li>Necess&aacute;rio defini&ccedil;&atilde;o de fluxo e &aacute;reas para recebimento, armazenagem, confer&ecirc;ncia e expedi&ccedil;&atilde;o.&nbsp;</li>
+<li>O dep&oacute;sito disp&otilde;e de 03 docas, sendo 01 exclusiva a cliente que n&atilde;o dip&otilde;e de produtos de interesse a sa&uacute;de. Docas 02 e 03 poderiam ser definidas para opera&ccedil;ao de rpodutos de interesse a sa&uacute;de pois atuam como atividades Multiclientes. Por&eacute;m uma destas docas, encontra-se em manuten&ccedil;&atilde;o.&nbsp;</li>
+<li>Necess&aacute;rio escolher uma esta&ccedil;&atilde;o para confer&ecirc;ncia de recebimento, &aacute;rea de ch&atilde;o para receber produtos de interesse a s&aacute;ude, assim como esta&ccedil;&atilde;o e &aacute;rea de ch&atilde;o para que possa ser delimitada aso produtos de interesse a sa&uacute;de. &nbsp;&nbsp;</li>
+<li>Para armazenagem, identificamos que a primeira Rua, lateral esquerda (visuali&ccedil;&atilde;o pelo acesso de colaboradores) poderia ser definida aos produtos de interesse a sa&uacute;de. Necess&aacute;rio verificar se a Vigil&acirc;ncia Sanit&aacute;ria aceitar&aacute; delimita&ccedil;&atilde;o sist&ecirc;mica para esta opera&ccedil;&atilde;o.&nbsp;</li>
+<li>&nbsp;As referidas posi&ccedil;&otilde;es se encontram com opera&ccedil;&atilde;o Multiclientes e n&atilde;o h&aacute; posi&ccedil;&otilde;es em grande quantidade livres, que possam ser ocupadas por rpodutos de interesse a sa&uacute;de.&nbsp;</li>
+<li>Informado que est&aacute; em avalia&ccedil;&atilde;o a extens&atilde;o da loca&ccedil;&atilde;o para o galp&atilde;o ao lado, e poder&aacute; ser uma oportunidade definir no novo local, um fluxo de opera&ccedil;a&otilde; separada aos produtos de interesse a sa&uacute;de (forma que atende na integra os requisitos sanit&aacute;rios).</li>
+<li>No fundo do dep&oacute;sito encontra-se a &aacute;rea cofre, ainda pendente da insta&ccedil;&atilde;o de acesso.&nbsp;</li>
+<li>H&aacute; uma &aacute;rea livre no fundo do dep&oacute;sito com estruturas desmontadas, aguardando defini&ccedil;&atilde;o de layout.&nbsp;&nbsp;</li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p> </p>                                              
+                                            <P style="display: none">Fotos: </P>
+                                            <div class="gallery">
+                                                    
+                                            </div>      
+                                        </div>
+                        
+                            </div>
+                            
+                        <div class="section">
+                            <div class="section-title">PRODUTOS NÃO CONFORMES</div>
+
+                        
+                                <div style="border: 1px solid #cc5500; padding: 10px;">
+                                            <h3>Observação:</h3>
+                                            <p style="display: none"> </p>                                              
+                                            <P style="display: none">Fotos: </P>
+                                            <div class="gallery">
+                                                    
+                                            </div>      
+                                        </div>
+                        
+                            </div>
+                            
+                        <div class="section">
+                            <div class="section-title">MANUTENÇÃO</div>
+
+                        
+                                <div style="border: 1px solid #cc5500; padding: 10px;">
+                                            <h3>Observação:</h3>
+                                            <p style="display: none"> </p>                                              
+                                            <P style="display: none">Fotos: </P>
+                                            <div class="gallery">
+                                                    
+                                            </div>      
+                                        </div>
+                        
+                            </div>
+                            
+                        <div class="section">
+                            <div class="section-title">CONSIDERAÇÕES GERAIS</div>
+
+                        
+                                <div style="border: 1px solid #cc5500; padding: 10px;">
+                                            <h3>Observação:</h3>
+                                            <p style="display: block"><ul>
+<li>Necess&aacute;rio definir se as posi&ccedil;&otilde;es verificadas ser&atilde;o utilizadas para produtos de interesse a sa&uacute;de ou aguardar&aacute; defini&ccedil;&atilde;o de loca&ccedil;&atilde;o do espa&ccedil;o ao lado. Se mantido no local visitado, disponibiliza a planta atualizada em DWG para in&iacute;cio da prepara&ccedil;&atilde;o do projeto.&nbsp;</li>
+<li>Necess&aacute;rio iniciar implementa&ccedil;&atilde;o dos requisitos do Sistema de Gest&atilde;o da Qualidade na unidade como: controle de pragas, limpeza, monitoramento de temperatura, requisitos de sanit&aacute;rio, copa, DML, entre outros.&nbsp;</li>
+<li>Salexpress avaliar&aacute; junto as legisla&ccedil;&otilde;es locais e Vigil&acirc;ncia Sanit&aacute;ria, se necess&aacute;rio referente a: acessbilidade de colaboradores, segrega&ccedil;&atilde;o de &aacute;rea aos produtos de interesse a sa&uacute;de e a divis&oacute;ria abaixo do teto entre os galp&otilde;es laterais.&nbsp;</li>
+</ul>
+<p>&nbsp;</p> </p>                                              
+                                            <P style="display: block">Fotos: </P>
+                                            <div class="gallery">
+                                                    
+    <style>
+        .item img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    
+                <div class="item">
+                    <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/69171fbfd9c45.jpg" alt="">
+                    <p>Galão de água direto no piso</p>
+                </div>
+            
+                <div class="item">
+                    <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/69171fcc0e693.jpg" alt="">
+                    <p>Área de carregamento de baterias em local improvisado. </p>
+                </div>
+            
+                <div class="item">
+                    <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/69171fdeb9f9d.jpg" alt="">
+                    <p>Área cofre sem controle de acesso. </p>
+                </div>
+            
+                <div class="item">
+                    <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/69171fe6d9930.jpg" alt="">
+                    <p></p>
+                </div>
+            
+                <div class="item">
+                    <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/69171ff03e8e3.jpg" alt="">
+                    <p></p>
+                </div>
+            
+                <div class="item">
+                    <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/69171ff8d92bf.jpg" alt="">
+                    <p></p>
+                </div>
+            
+                <div class="item">
+                    <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/6917200664a41.jpg" alt="">
+                    <p></p>
+                </div>
+            
+                                            </div>      
+                                        </div>
+                        
+                            </div>
+                            
+                    <div class="section">
+                        <div class="section-title">Assinatura Digital</div>
+
+                        <div class="assinatura-container">
+                            <div class="selo">
+                                <img src="https://Salexpress.com/assets/images/fvincon.png" alt="Selo de Verificação">
+                            </div>
+                            <div class="assinatura-dados">
+                                <p><span>Nome:</span> Camila Solano Machado, Jose Anderson Ribeiro da Silva, Julia Lopes Smania   </p>
+                                <p><span>Data:</span> 21/10/2025 </p>
+                                <p style="font-size: 8px;">Assinado pela Salexpress.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </body>
+            </html>
+        

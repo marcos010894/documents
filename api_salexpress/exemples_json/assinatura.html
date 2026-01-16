@@ -1,0 +1,718 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Visita</title>
+<style>
+/* Contêiner principal que utiliza display flex */
+.gallery {
+        text-align: center;
+        width: 100%;
+    }
+
+    .item {
+        display: inline-block;
+        width: 45%;
+        margin: 10px;
+        text-align: center;
+        vertical-align: top;
+    }
+
+    .item img {
+        width: 100%;
+        height: auto;
+
+    }
+    @media (max-width: 768px) {
+        .item {
+            width: 250px;
+        }
+    }
+
+body {
+font-family: Arial, sans-serif;
+background-color: #fefefe;
+margin: 0;
+padding: 0;
+color: #333;
+}
+
+.container {
+max-width: 800px;
+margin: 20px auto;
+padding: 20px;
+border: 2px solid #cc5500;
+border-radius: 10px;
+background-color: rgba(255, 246, 230, 0.9);
+background-size: 300px;
+/* Ajuste o tamanho da marca d'água */
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+}
+
+.title {
+text-align: center;
+color: #cc5500;
+font-size: 24px;
+margin-bottom: 20px;
+font-weight: bold;
+}
+
+.section {
+margin-bottom: 20px;
+}
+
+.section-title {
+font-size: 18px;
+color: #cc5500;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.content {
+padding: 10px;
+border: 1px solid #cc5500;
+border-radius: 5px;
+background-color: #fff;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-bottom: 20px;
+}
+
+table th,
+table td {
+border: 1px solid #cc5500;
+padding: 8px;
+text-align: left;
+}
+
+table th {
+background-color: #ffcc99;
+color: #333;
+}
+
+.flex-container {
+display: flex;
+justify-content: space-between;
+gap: 10px;
+}
+
+.flex-item {
+flex: 1;
+padding: 10px;
+border: 1px solid #cc5500;
+border-radius: 5px;
+background-color: #fff;
+}
+
+textarea {
+width: 90%;
+height: 100px;
+border: 1px solid #cc5500;
+border-radius: 5px;
+padding: 10px;
+}
+
+td img {
+width: 250px;
+}
+
+.assinatura-container {
+display: flex;
+align-items: center;
+border: 1px solid #ddd;
+border-radius: 8px;
+background: #fff;
+padding: 10px 15px;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+width: auto;
+/* Ajusta automaticamente à largura do conteúdo */
+max-width: 100%;
+/* Previne que o contêiner exceda o tamanho do pai */
+}
+
+.selo {
+flex-shrink: 0;
+margin-right: 10px;
+}
+
+.selo img {
+max-width: 50px;
+height: auto;
+display: block;
+}
+
+.assinatura-dados {
+line-height: 1.4;
+}
+
+.assinatura-dados p {
+margin: 0;
+font-size: 14px;
+}
+
+.assinatura-dados p span {
+font-weight: bold;
+}
+
+</style>
+</head>
+
+<body>
+
+
+
+<div class="container">
+        <img src="https://www.globalty.com.br/img/logo2.png" style="width:100px" />
+        <div class="title">Relatório de Visita</div>
+        <div class="section">
+            <div class="section-title">Dados da Visita</div>
+            <div class="content">
+                <p><strong>Data:</strong> 29/01/2025</p>
+                <p><strong>Objetivo da visita:</strong> Visita Técnica </p>
+                <p><strong>Empresa:</strong>AMAZON SERVIÇOS DE VAREJO /LUFT SOLUTIONS LOGÍSTICA</p>
+                <p><strong>Unidade:</strong> XCV9 – CNPJ: 15.436.940/0008-71</p>
+                <p><strong>Ramo de atividade:</strong> Armazenagem </p>
+                <p><strong>Representantes acionados durante a visita:</strong> Vinicius Souza -HSE, Hector Recabarrel - ICQA, Neide -Verzani</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">Realizada por</div>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <strong>Nome:</strong> Karina Youssef
+                </div>
+                <div class="flex-item">
+                    <strong>Formação:</strong> Farmacêutica
+                </div>
+                <div class="flex-item">
+                    <strong>Ident. Conselho de Classe:</strong> 101291
+                </div>
+            </div>
+        </div>
+
+
+            <div class="section">
+                <div class="section-title">ASSUNTOS REGULATÓRIOS</div>
+
+
+                    <div style="border: 1px solid #cc5500; padding: 10px;">
+                                <h3>Observação:</h3>
+                                <p style="display: none"> </p>
+                                <P style="display: block">Fotos: </P>
+                                <div class="gallery">
+
+<style>
+.item img {
+width: 100%;
+height: auto;
+}
+</style>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/IMG-20250130-WA0011.jpg" alt="">
+        <p>Protocolo de renovação.</p>
+    </div>
+
+                                </div>
+                            </div>
+
+                </div>
+
+            <div class="section">
+                <div class="section-title">CONTROLE DE DOCUMENTOS</div>
+
+
+                    <div style="border: 1px solid #cc5500; padding: 10px;">
+                                <h3>Observação:</h3>
+                                <p style="display: none"> </p>
+                                <P style="display: none">Fotos: </P>
+                                <div class="gallery">
+
+                                </div>
+                            </div>
+
+                </div>
+
+            <div class="section">
+                <div class="section-title">TREINAMENTO</div>
+
+
+
+                                    <div style="border: 1px solid #cc5500; padding: 10px;">
+                                        <h3> Os registros de treinamento encontram-se disponíveis? Descrever registro de treinamento por amostragem : sim</h3>
+                                        <p>Descrição:</p>
+                                        <p style="display: block">Descrição: Treinamento de Boas Práticas REG-004 VS.04 realizado em 11/04/2024. </p>
+
+                                        <p>Titulo: Boas Práticas  </p><br>
+                                        <p>Data: 11/04/2024 </p><br>
+                                        <p>Quem Realizou: Karina Youssef </p><br>
+                                        <p>Onde está arquivado: Pasta de documentos Luft. </p> <br>                                        <P>Fotos: </P>
+                                        <p style="display: none">Fotos: </p>
+                                        <div class="gallery">
+
+                                        </div>
+                                    </div>
+
+                    <div style="border: 1px solid #cc5500; padding: 10px;">
+                                <h3>Observação:</h3>
+                                <p style="display: block"><p>Necess&aacute;rio aplica&ccedil;&atilde;o de treinamento de Boas Pr&aacute;ticas ao novos colaboradores HSE.</p> </p>
+                                <P style="display: none">Fotos: </P>
+                                <div class="gallery">
+
+                                </div>
+                            </div>
+
+                </div>
+
+            <div class="section">
+                <div class="section-title">CONTROLE DE PRAGAS</div>
+
+
+                                    <div style="border: 1px solid #cc5500; padding: 10px;">
+                                            <h3> O serviço de controle de Pragas foi realizado de acordo com o cronograma? Descrever data do último serviço : sim</h3>
+                                            <p style="display: block;">Descrição:</p>
+                                            <p style="display: block; margin-left: 5px"> Verificado em iscas realização do serviço em 01/25.</p>
+                                            <P style="display: none" >Fotos: </P>
+                                            <div  class="gallery">
+
+                                            </div>
+                                        </div>
+
+                    <div style="border: 1px solid #cc5500; padding: 10px;">
+                                <h3>Observação:</h3>
+                                <p style="display: none"> </p>
+                                <P style="display: block">Fotos: </P>
+                                <div class="gallery">
+
+<style>
+.item img {
+width: 100%;
+height: auto;
+}
+</style>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381731630432005952761154234415.jpg" alt="">
+        <p>Isca 159 com presença de sujidades. Sugere-se troca.</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381731630432005952761154234415.jpg" alt="">
+        <p>Isca 159 com presença de sujidades. Sugere-se troca.</p>
+    </div>
+
+                                </div>
+                            </div>
+
+                </div>
+
+            <div class="section">
+                <div class="section-title">LIMPEZA E CAIXA D’ÁGUA</div>
+
+
+                    <div style="border: 1px solid #cc5500; padding: 10px;">
+                                <h3>Observação:</h3>
+                                <p style="display: block"><p>Verificado desde visita anterior: Bebedouros de &aacute;gua da unidade apresentam alguns com a etiqueta de manuten&ccedil;&atilde;o de filtro devidamente atualizada, enquanto outros n&atilde;o possuem a etiqueta atualizada. Nesta visita Verificado que produto da &aacute;rea DML UHS LIMPADOR foi retirado da unidade.</p> </p>
+                                <P style="display: block">Fotos: </P>
+                                <div class="gallery">
+
+<style>
+.item img {
+width: 100%;
+height: auto;
+}
+</style>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381744220551461318456271085047.jpg" alt="">
+        <p>Hidrante 48 com presença de sumidades, necessário limpeza.</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381767250628397725233846927719.jpg" alt="">
+        <p>Presença de lodo (mofo) em Máquina de fita gomada em mesas faturamento leve.  necessário realizar a limpeza periódica. </p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381767250628397725233846927719.jpg" alt="">
+        <p>Presença de lodo (mofo) em Máquina de fita gomada em mesas faturamento leve.  necessário realizar a limpeza periódica. </p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381770553974577934227578099590.jpg" alt="">
+        <p>Equipamento VGA 46 com excesso de sujidade e embalagens abertas. Necessário limpeza.</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381770553974577934227578099590.jpg" alt="">
+        <p>Equipamento VGA 46 com excesso de sujidade e embalagens abertas. Necessário limpeza.</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381770553974577934227578099590.jpg" alt="">
+        <p>Equipamento VGA 46 com excesso de sujidade e embalagens abertas. Necessário limpeza.</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/173817719576132009193051878953.jpg" alt="">
+        <p>Presença de material de limpeza disposto sem suporte frente doca 137, Necessário inserção de suporte.</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/173817719576132009193051878953.jpg" alt="">
+        <p>Presença de material de limpeza disposto sem suporte frente doca 137, Necessário inserção de suporte.</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381785873806482280676675785941.jpg" alt="">
+        <p>Guard Rail com excesso de sujidade. Necessário limpeza.</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381802393161619062252475931081.jpg" alt="">
+        <p>Verificado processo de limpeza de carrinho, sendo realizado conforme demanda da operação.</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381802393161619062252475931081.jpg" alt="">
+        <p>Verificado processo de limpeza de carrinho, sendo realizado conforme demanda da operação.</p>
+    </div>
+
+                                </div>
+                            </div>
+
+                </div>
+
+            <div class="section">
+                <div class="section-title">QUALIFICAÇÃO DE FORNECEDORES</div>
+
+
+                    <div style="border: 1px solid #cc5500; padding: 10px;">
+                                <h3>Observação:</h3>
+                                <p style="display: block"><p>Sugere-se inser&ccedil;&atilde;o de fornecedor de Limpeza como sendo cr&iacute;tico no POP de Qualifica&ccedil;&atilde;o de Fornecedores. Definir as responsabilidades de gest&atilde;o dos SOPs LUFT que fazem parte dos processos Amazon.</p> </p>
+                                <P style="display: none">Fotos: </P>
+                                <div class="gallery">
+
+                                </div>
+                            </div>
+
+                </div>
+
+            <div class="section">
+                <div class="section-title">NÃO CONFORMIDADES</div>
+
+
+                    <div style="border: 1px solid #cc5500; padding: 10px;">
+                                <h3>Observação:</h3>
+                                <p style="display: none"> </p>
+                                <P style="display: none">Fotos: </P>
+                                <div class="gallery">
+
+                                </div>
+                            </div>
+
+                </div>
+
+            <div class="section">
+                <div class="section-title">INSTRUMENTOS E EQUIPAMENTOS</div>
+
+
+                                            <div style="border: 1px solid #cc5500; padding: 10px;">
+                                                    <h3> A empresa utiliza instrumentos e equipamentos que necessitam de calibração? Se sim, estão calibrados? Registrar um instrumento/equipamento por amostragem <br> O Certificado de calibração do padrão encontra-se disponível?:  sim</h3>
+                                                    <p style="display: block">Descrição:</p>
+                                                    <p style="display: block">Via Sistema Salexpress  </p>                                   <P>Fotos: </P>
+                                                    <p>Fotos: </p>
+                                                    <div style="display: none" class="gallery">
+
+                                                    </div>
+                                                </div>
+
+
+                    <div style="border: 1px solid #cc5500; padding: 10px;">
+                                <h3>Observação:</h3>
+                                <p style="display: block"><p>Resta aquisi&ccedil;&atilde;o do instrumento DTH-006, unidade encontra-se com 05 instrumentos de medi&ccedil;&atilde;o, necess&aacute;rio 06 instrumentos. Informado durante visita que foi solicitado a compra de dois termohigrometros. Atualizada Lista de Controle de Equipamentos no sistema Salexpress, necess&aacute;rio impress&atilde;o e arquivamento na pasta de LUFT. registros https://www.globalty.com.br/download.php?id=20012&amp;hash=192809fd5e230cce09a3dc8a34fa39a4</p> </p>                                            
+
+                                <P style="display: block">Fotos: </P>
+                                <div class="gallery">
+
+<style>
+.item img {
+width: 100%;
+height: auto;
+}
+</style>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381751629841140197872582966945.jpg" alt="">
+        <p>Verificar do registro de temperatura instrumento DTH-004, com registros até 32?C em 01/25.</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/Screenshot_20250130_181841_Samsung Notes.jpg" alt="">
+        <p>Verificado em visitas anteriores em ainda sem resolução: • Conforme verificação dos registros de temperatura da unidade, o perfil térmico do FC não atende o requisito de armazenamento de produtos de temperatura ambiente e/ou 15-30°C previsto nas embalagens de alguns produtos. É necessário verificar junto a Amazon a armazenagem destes, sendo pontuado desde relatório do dia 03/07/2024, produtos com requisitos de Temperatura.</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/Screenshot_20250130_181841_Samsung Notes.jpg" alt="">
+        <p>Verificado em visitas anteriores em ainda sem resolução: • Conforme verificação dos registros de temperatura da unidade, o perfil térmico do FC não atende o requisito de armazenamento de produtos de temperatura ambiente e/ou 15-30°C previsto nas embalagens de alguns produtos. É necessário verificar junto a Amazon a armazenagem destes, sendo pontuado desde relatório do dia 03/07/2024, produtos com requisitos de Temperatura.</p>
+    </div>
+
+                                </div>
+                            </div>
+
+                </div>
+
+            <div class="section">
+                <div class="section-title">SAÚDE E SEGURANÇA</div>
+
+
+                                    <div style="border: 1px solid #cc5500; padding: 10px;">
+                                            <h3> Identificação : sim</h3>
+                                            <p style="display: block;">Descrição:</p>
+                                            <p style="display: block; margin-left: 5px"> Amostrados extintores com verificação check-list em 12/24.</p>
+                                            <P style="display: none" >Fotos: </P>
+                                            <div  class="gallery">
+
+                                            </div>
+                                        </div>
+
+                                    <div style="border: 1px solid #cc5500; padding: 10px;">
+                                            <h3> Funcionários estão utilizando EPI? : sim</h3>
+                                            <p style="display: none;">Descrição:</p>
+                                            <p style="display: none; margin-left: 5px"> </p>
+                                            <P style="display: none" >Fotos: </P>
+                                            <div  class="gallery">
+
+                                            </div>
+                                        </div>
+
+                    <div style="border: 1px solid #cc5500; padding: 10px;">
+                                <h3>Observação:</h3>
+                                <p style="display: none"> </p>
+                                <P style="display: none">Fotos: </P>
+                                <div class="gallery">
+
+                                </div>
+                            </div>
+
+                </div>
+
+            <div class="section">
+                <div class="section-title">OPERACIONAL</div>
+
+
+                    <div style="border: 1px solid #cc5500; padding: 10px;">
+                                <h3>Observação:</h3>
+                                <p style="display: block"><p>Verificado desde visita anterior e ainda sem resolu&ccedil;&atilde;o: Retorno de produto M&aacute;quina Nespresso que acompanha C&Aacute;PSULAS DE CAF&Eacute;. Produtos acompanhados de alimentos devem ser considerados alimentos devido prazo de validade das c&aacute;psulas. Necess&aacute;rio verificar junto ao inbound que todas as m&aacute;quinas que acompanham c&aacute;psulas sejam inseridas no sistema com prazo de validade e armazenadas nas ruas destinadas a alimentos. Amostragem: P1B-244-C470 (C&aacute;psulas com prazo de validade at&eacute; 31/07/2025), P1F-833-J784. Informado pelo time LUFT que foi aberto ticket com Amazon para inser&ccedil;&atilde;o de data de vencimento das c&aacute;psulas. RUAS SANEANTES P1B e P1F&bull; P1B/P1F - Verificado mistura de categorias em bins destinados a saneantes. H&aacute; bins com produtos de higiene pessoal (Sabonete de higieniza&ccedil;&atilde;o de m&atilde;os armazenados junto a produtos saneantes). Recorrente.o Necess&aacute;rio realocar todos os produtos de higiene pessoal para ruas destinadas a esta categoria, retirando-os das ruas destinadas a saneantes. o Necess&aacute;rio criar bloqueio de stow para outras categorias na &aacute;rea de saneantes, de forma evitar que outras categorias sejam armazenadas ou retreinamento dos colaboradores, de forma a facilitar entendimento e diferencia&ccedil;&atilde;o entre produtos como: Sabonete de higieniza&ccedil;&atilde;o de m&atilde;os (HIGIENE PESSOAL) e produto de limpeza (SANEANTES) com mesma volumetria de sabonetes. Amostragem: P1B-259-E472, P1B-264-C490</p> </p>
+                                <P style="display: block">Fotos: </P>
+                                <div class="gallery">
+
+<style>
+.item img {
+width: 100%;
+height: auto;
+}
+</style>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381755072058361298129576179275.jpg" alt="">
+        <p>Produto alimento Bin 602-G462 com alimento vencido</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381759952823551452795881966331.jpg" alt="">
+        <p>Kit com 04 leites Aptanutri posição 601-J620 Sem etiqueta de validade no lado externo da caixa.</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381759952823551452795881966331.jpg" alt="">
+        <p>Kit com 04 leites Aptanutri posição 601-J620 Sem etiqueta de validade no lado externo da caixa.</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381760156185856815319949609585.jpg" alt="">
+        <p>Embalagem avariada</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381760156185856815319949609585.jpg" alt="">
+        <p>Embalagem avariada</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381760156185856815319949609585.jpg" alt="">
+        <p>Embalagem avariada</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381762100015499385713706057040.jpg" alt="">
+        <p>Posição com vazamento de produto saneante.</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381762747041250134940901549655.jpg" alt="">
+        <p>Produto seaneante armazenado de forma errônea, Necessária armazenamento dos produtos em pé.</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381762747041250134940901549655.jpg" alt="">
+        <p>Produto seaneante armazenado de forma errônea, Necessária armazenamento dos produtos em pé.</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381764200624761525586766681522.jpg" alt="">
+        <p>Bin com sumidades de vazamento de saneantes.</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381779969925978743035702603907.jpg" alt="">
+        <p>Produto PET armazenado em rua não destinada a esta categoria.</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381779969925978743035702603907.jpg" alt="">
+        <p>Produto PET armazenado em rua não destinada a esta categoria.</p>
+    </div>
+
+                                </div>
+                            </div>
+
+                </div>
+
+            <div class="section">
+                <div class="section-title">PRODUTOS NÃO CONFORMES</div>
+
+
+                    <div style="border: 1px solid #cc5500; padding: 10px;">
+                                <h3>Observação:</h3>
+                                <p style="display: none"> </p>
+                                <P style="display: none">Fotos: </P>
+                                <div class="gallery">
+
+                                </div>
+                            </div>
+
+                </div>
+
+            <div class="section">
+                <div class="section-title">MANUTENÇÃO</div>
+
+
+                    <div style="border: 1px solid #cc5500; padding: 10px;">
+                                <h3>Observação:</h3>
+                                <p style="display: none"> </p>
+                                <P style="display: block">Fotos: </P>
+                                <div class="gallery">
+
+<style>
+.item img {
+width: 100%;
+height: auto;
+}
+</style>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381743408588361625717503797348.jpg" alt="">
+        <p>Verificado presença de goteira 276-P1B</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381743408588361625717503797348.jpg" alt="">
+        <p>Verificado presença de goteira 276-P1B</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381743408588361625717503797348.jpg" alt="">
+        <p>Verificado presença de goteira 276-P1B</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381743408588361625717503797348.jpg" alt="">
+        <p>Verificado presença de goteira 276-P1B</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381744220551461318456271085047.jpg" alt="">
+        <p>Hidrante 48 com presença de sujidades, necessário limpeza.</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381744220551461318456271085047.jpg" alt="">
+        <p>Hidrante 48 com presença de sujidades, necessário limpeza.</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381746784851352455336723337707.jpg" alt="">
+        <p>Presença De goteira próximo à rua 416-P1D</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381748610681548324221411539997.jpg" alt="">
+        <p>Presença De goteira próximo à rua 523-P1E</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381774179752607639644652697347.jpg" alt="">
+        <p>Climatizados 16 com excesso de poeira.</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381774179752607639644652697347.jpg" alt="">
+        <p>Climatizados 16 com excesso de poeira.</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381799033985900955979538942323.jpg" alt="">
+        <p>Doca desnivelada, permitindo entrada de pragas.</p>
+    </div>
+
+    <div class="item">
+        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/17381799033985900955979538942323.jpg" alt="">
+        <p>Doca desnivelada, permitindo entrada de pragas.</p>
+    </div>
+
+                                </div>
+                            </div>
+
+                </div>
+
+            <div class="section">
+                <div class="section-title">CONSIDERAÇÕES GERAIS</div>
+
+
+                    <div style="border: 1px solid #cc5500; padding: 10px;">
+                                <h3>Observação:</h3>
+                                <p style="display: block"><p>Unidade encontra-se em processo de renova&ccedil;&atilde;o de licen&ccedil;a, sendo pass&iacute;vel de inspe&ccedil;&atilde;o pela VISA.</p> </p>
+                                <P style="display: none">Fotos: </P>
+                                <div class="gallery">
+
+                                </div>
+                            </div>
+
+                </div>
+
+        <div class="section">
+            <div class="section-title">Assinatura Digital</div>
+
+            <div class="assinatura-container">
+                <div class="selo">
+                    <img src="https://Salexpress.com/assets/images/fvincon.png" alt="Selo de Verificação">
+                </div>
+                <div class="assinatura-dados">
+                    <p><span>Nome:</span> Karina Youssef  </p>
+                    <p><span>Data:</span> 23/12/2024</p>
+                    <p style="font-size: 8px;">Assinado pela Salexpress.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

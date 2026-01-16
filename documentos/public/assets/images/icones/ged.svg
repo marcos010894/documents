@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="20" fill="#4F46E5" opacity="0.1"/>
+  <g transform="translate(30, 30)">
+    <!-- Pasta de documentos -->
+    <path d="M10 15 L50 15 L55 20 L55 50 L10 50 Z" fill="#4F46E5" stroke="#3730A3" stroke-width="2"/>
+    <!-- Documentos internos -->
+    <rect x="15" y="25" width="25" height="3" fill="#818CF8"/>
+    <rect x="15" y="30" width="30" height="3" fill="#818CF8"/>
+    <rect x="15" y="35" width="20" height="3" fill="#818CF8"/>
+    <rect x="15" y="40" width="28" height="3" fill="#818CF8"/>
+    <!-- Ícone GED -->
+    <text x="32.5" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#4F46E5">GED</text>
+  </g>
+</svg>

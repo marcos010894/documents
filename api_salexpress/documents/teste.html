@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Visita</title>
+    <style>
+        /* Contêiner principal que utiliza display flex */
+        .gallery {
+            text-align: center;
+            width: 100%;
+        }
+
+        .item {
+            display: inline-block;
+            width: 45%;
+            margin: 10px;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+
+        }
+
+        @media (max-width: 768px) {
+            .item {
+                width: 25%;
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fefefe;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #cc5500;
+            border-radius: 10px;
+            background-color: rgba(255, 246, 230, 0.9);
+            background-size: 300px;
+            /* Ajuste o tamanho da marca d'água */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .title {
+            text-align: center;
+            color: #cc5500;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            color: #cc5500;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            padding: 10px;
+            border: 1px solid #cc5500;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #cc5500;
+            padding: 8px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #ffcc99;
+            color: #333;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .flex-item {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #cc5500;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        textarea {
+            width: 90%;
+            height: 100px;
+            border: 1px solid #cc5500;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        td img {
+            width: 250px;
+        }
+
+        .assinatura-container {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #fff;
+            padding: 10px 15px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            width: auto;
+            /* Ajusta automaticamente à largura do conteúdo */
+            max-width: 100%;
+            /* Previne que o contêiner exceda o tamanho do pai */
+        }
+
+        .selo {
+            flex-shrink: 0;
+            margin-right: 10px;
+        }
+
+        .selo img {
+            max-width: 50px;
+            height: auto;
+            display: block;
+        }
+
+        .assinatura-dados {
+            line-height: 1.4;
+        }
+
+        .assinatura-dados p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .assinatura-dados p span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <img src="https://www.globalty.com.br/img/logo2.png" style="width:100px" />
+        <div class="title">Relatório de Visita</div>
+        <div class="section">
+            <div class="section-title">Dados da Visita</div>
+            <div class="content">
+                <p><strong>Data:</strong> 22/05/2025</p>
+                <p><strong>Objetivo da visita:</strong> Visita técnica </p>
+                <p><strong>Empresa:</strong>Afya/RXPRO </p>
+                <p><strong>Unidade:</strong> Moove</p>
+                <p><strong>Ramo de atividade:</strong> Op. Logístico </p>
+                <p><strong>Representantes acionados durante a visita:</strong> Maisa, Cibeli, Danilo, Flávio </p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">Realizada por</div>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <strong>Nome:</strong> Maria Eduarda Bonchristiani
+                </div>
+                <div class="flex-item">
+                    <strong>Formação:</strong> Farmacêutica
+                </div>
+                <div class="flex-item">
+                    <strong>Ident. Conselho de Classe:</strong> CRF
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section">
+            <div class="section-title">ASSUNTOS REGULATÓRIOS</div>
+
+
+            <div style="border: 1px solid #cc5500; padding: 10px;">
+                <h3> CNPJ disponível? : sim</h3>
+                <p style="display: block;">Descrição:</p>
+                <p style="display: block; margin-left: 5px"> Sim o da Matriz, incluso no sistema o da Filial </p>
+                <P style="display: none">Fotos: </P>
+                <div class="gallery">
+
+                </div>
+            </div>
+
+            <div style="border: 1px solid #cc5500; padding: 10px;">
+                <h3> AVCB disponível? Qual validade? : sim</h3>
+                <p style="display: none;">Descrição:</p>
+                <p style="display: none; margin-left: 5px"> </p>
+                <P style="display: none">Fotos: </P>
+                <div class="gallery">
+
+                </div>
+            </div>
+
+            <div style="border: 1px solid #cc5500; padding: 10px;">
+                <h3> LTA disponível? Qual o número? : sim</h3>
+                <p style="display: none;">Descrição:</p>
+                <p style="display: none; margin-left: 5px"> </p>
+                <P style="display: none">Fotos: </P>
+                <div class="gallery">
+
+                </div>
+            </div>
+
+            <div style="border: 1px solid #cc5500; padding: 10px;">
+                <h3> Registro de Responsabilidade Técnica disponível? Qual validade? : sim</h3>
+                <p style="display: none;">Descrição:</p>
+                <p style="display: none; margin-left: 5px"> </p>
+                <P style="display: none">Fotos: </P>
+                <div class="gallery">
+
+                </div>
+            </div>
+
+            <div style="border: 1px solid #cc5500; padding: 10px;">
+                <h3> Certificado CETESB disponível? Qual a validade? : sim</h3>
+                <p style="display: none;">Descrição:</p>
+                <p style="display: none; margin-left: 5px"> </p>
+                <P style="display: none">Fotos: </P>
+                <div class="gallery">
+
+                </div>
+            </div>
+
+            <div style="border: 1px solid #cc5500; padding: 10px;">
+                <h3>Observação:</h3>
+                <p style="display: block">
+                <p>Verifica&ccedil;&atilde;o pasta de documentos Moove&nbsp;</p>
+                <ul>
+                    <li>Aguardando Vigil&acirc;ncia Sanit&aacute;ria para Renova&ccedil;&atilde;o da Licen&ccedil;a de
+                        Alimentos - Licen&ccedil;a vencida em 14/02/2025 - protocolo de renova&ccedil;&atilde;o
+                        09/01/2025 - n&ordm; SB.002592/2025-24</li>
+                    <li>Junho/Julho novo CRLV</li>
+                    <li>Calibra&ccedil;&atilde;o Termometro 231/COEL - identifica&ccedil;&atilde;o EOE 0440 vencendo em
+                        07/06/2025</li>
+                    <li>Atualizado PGR e PCMSO</li>
+                    <li>Solicitado Contrato Social Atualizado;</li>
+                    <li>Apolice de Seguro com Vencimento em 21.06.2025</li>
+                </ul>
+                </p>
+                <P style="display: none">Fotos: </P>
+                <div class="gallery">
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <div class="section-title">CONTROLE DE DOCUMENTOS</div>
+
+
+            <div style="border: 1px solid #cc5500; padding: 10px;">
+                <h3> O Manual da Qualidade encontra-se disponível? Descrever identificação do Manual e validade do
+                    documento : sim</h3>
+                <p style="display: none;">Descrição:</p>
+                <p style="display: none; margin-left: 5px"> </p>
+                <P style="display: block">Fotos: </P>
+                <div class="gallery">
+
+                    <style>
+                        .item img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    </style>
+
+                </div>
+            </div>
+
+            <div style="border: 1px solid #cc5500; padding: 10px;">
+                <h3> Os procedimentos de qualidade encontram-se disponíveis? Descrever identificação de procedimentos e
+                    validade por amostragem : sim</h3>
+                <p style="display: none;">Descrição:</p>
+                <p style="display: none; margin-left: 5px"> </p>
+                <P style="display: block">Fotos: </P>
+                <div class="gallery">
+
+                    <style>
+                        .item img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    </style>
+
+                </div>
+            </div>
+
+            <div style="border: 1px solid #cc5500; padding: 10px;">
+                <h3> O Manual Operacional encontra-se disponível? Descrever identificação do Manual e validade do
+                    document : sim</h3>
+                <p style="display: none;">Descrição:</p>
+                <p style="display: none; margin-left: 5px"> </p>
+                <P style="display: none">Fotos: </P>
+                <div class="gallery">
+
+                </div>
+            </div>
+
+            <div style="border: 1px solid #cc5500; padding: 10px;">
+                <h3> Há registros em uso nos processos da empresa? Verificar registro em uso quanto a identificação,
+                    boas práticas de preenchimento e arquivo por amostragem : sim</h3>
+                <p style="display: none;">Descrição:</p>
+                <p style="display: none; margin-left: 5px"> </p>
+                <P style="display: none">Fotos: </P>
+                <div class="gallery">
+
+                </div>
+            </div>
+
+            <div style="border: 1px solid #cc5500; padding: 10px;">
+                <h3>Observação:</h3>
+                <p style="display: none"> </p>
+                <P style="display: none">Fotos: </P>
+                <div class="gallery">
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <div class="section-title">TREINAMENTO</div>
+
+
+            <div style="border: 1px solid #cc5500; padding: 10px;">
+                <h3>Observação:</h3>
+                <p style="display: block">
+                <p>Agendado treinamento dos colaboradores do Pharma Moove para o pr&oacute;ximo m&ecirc;s
+                    (sugest&atilde;o fazer um treinamento interativo de cada etapa do processo);</p>
+                <p>Agendado treinamento time de limpeza para a pr&oacute;xima semana;&nbsp;</p>
+                </p>
+                <P style="display: none">Fotos: </P>
+                <div class="gallery">
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <div class="section-title">CONTROLE DE PRAGAS</div>
+
+
+            <div style="border: 1px solid #cc5500; padding: 10px;">
+                <h3> As iscas estão em bom estado de Conservação? : sim</h3>
+                <p style="display: none;">Descrição:</p>
+                <p style="display: none; margin-left: 5px"> </p>
+                <P style="display: none">Fotos: </P>
+                <div class="gallery">
+
+                </div>
+            </div>
+
+            <div style="border: 1px solid #cc5500; padding: 10px;">
+                <h3> O serviço de controle de Pragas foi realizado de acordo com o cronograma? Descrever data do último
+                    serviço : sim</h3>
+                <p style="display: none;">Descrição:</p>
+                <p style="display: none; margin-left: 5px"> </p>
+                <P style="display: none">Fotos: </P>
+                <div class="gallery">
+
+                </div>
+            </div>
+
+            <div style="border: 1px solid #cc5500; padding: 10px;">
+                <h3>Observação:</h3>
+                <p style="display: block">
+                <p>Certificados de Controle de Pragas na pasta;</p>
+                </p>
+                <P style="display: none">Fotos: </P>
+                <div class="gallery">
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <div class="section-title">LIMPEZA E CAIXA D’ÁGUA</div>
+
+
+            <div style="border: 1px solid #cc5500; padding: 10px;">
+                <h3> Os registros de limpeza encontram-se disponíveis e o preenchimento está sendo realizado
+                    corretamente? : sim</h3>
+                <p style="display: none;">Descrição:</p>
+                <p style="display: none; margin-left: 5px"> </p>
+                <P style="display: block">Fotos: </P>
+                <div class="gallery">
+
+                    <style>
+                        .item img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    </style>
+
+                    <div class="item">
+                        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/682f1e38d95ba.jpg" alt="">
+                        <p>Registro de limpeza sem preenchimento de limpeza semanal e quinzenal </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div style="border: 1px solid #cc5500; padding: 10px;">
+                <h3>Observação:</h3>
+                <p style="display: block">
+                <p>Atualizado Certificado de Limpeza de Caixa D'&agrave;gua</p>
+                </p>
+                <P style="display: none">Fotos: </P>
+                <div class="gallery">
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <div class="section-title">QUALIFICAÇÃO DE FORNECEDORES</div>
+
+
+            <div style="border: 1px solid #cc5500; padding: 10px;">
+                <h3>Observação:</h3>
+                <p style="display: block">
+                <p>Plataforma de monitoramento de Temperatura: ok</p>
+                <p>Qualifica&ccedil;&atilde;o Rentokil vencida, abrir RNC e realizar requalifica&ccedil;&atilde;o</p>
+                <p>Microambiental em processo de requalifica&ccedil;&atilde;o, finalizar processo e atualizar
+                    documentos;&nbsp;</p>
+                <p>CEIME : atualizar documentos vencidos;</p>
+                <p><strong>Franquias Anvisadas:</strong></p>
+                <p>Radageski - RS - atualizar documentos na pastas e preencher formul&aacute;rio 05 - tem
+                    autoriaza&ccedil;&atilde;o de tranporte para medicamentos controlados;</p>
+                <p>BIA Flash - DF - atualizar documentos na pastas e preencher formul&aacute;rio 05;</p>
+                <p>Quivver - PR - atualizar documentos na pastas e preencher formul&aacute;rio 05;</p>
+                <p>Ichiban - MG - atualizar documentos na pastas e preencher formul&aacute;rio 05;&nbsp;</p>
+                </p>
+                <P style="display: none">Fotos: </P>
+                <div class="gallery">
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <div class="section-title">INSTRUMENTOS E EQUIPAMENTOS</div>
+
+
+            <div style="border: 1px solid #cc5500; padding: 10px;">
+                <h3>Observação:</h3>
+                <p style="display: block">
+                <p>Monitoramento de temperatura sala de n&atilde;o conformes ok;</p>
+                </p>
+                <P style="display: none">Fotos: </P>
+                <div class="gallery">
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <div class="section-title">RECLAMAÇÃO/ DEVOLUÇÃO/ RECALL</div>
+
+
+            <div style="border: 1px solid #cc5500; padding: 10px;">
+                <h3>Observação:</h3>
+                <p style="display: block">
+                <p>- Maiores volumes de devolu&ccedil;&atilde;o no m&ecirc;s s&atilde;o de: Hypera.</p>
+                <p style="padding-left: 40px;">Motivos: Falecimento, CEP errado, endere&ccedil;o incompleto,
+                    m&eacute;dico rejeitou.</p>
+                <p>&Aacute;rea Pharma (recebimento) -&nbsp;</p>
+                <p>7 paletes de Hypera + 4 m&uacute;ltiplos clientes + 1 organon = 12 para tratar de
+                    devolu&ccedil;&atilde;o e serem armazenados na &aacute;rea de devolu&ccedil;&atilde;o que
+                    est&aacute; acima de 100% da capacidade;</p>
+                <p>Paletes de devolu&ccedil;&atilde;o &aacute;rea externa:</p>
+                <ul>
+                    <li>2 cristalia</li>
+                    <li>5theraskin</li>
+                    <li>1 eucerin</li>
+                    <li>1 organon</li>
+                    <li>14 Hypera&nbsp;</li>
+                    <li>2 merck</li>
+                </ul>
+                </p>
+                <P style="display: block">Fotos: </P>
+                <div class="gallery">
+
+                    <style>
+                        .item img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    </style>
+
+                    <div class="item">
+                        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/682f215aa7f1e.jpg" alt="">
+                        <p>Alto volume de devolução aguardando cliente retirar fora da área de armazenagem (12 paletes
+                            de Galderma -desde fevereiro 2025)</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <div class="section-title">SAÚDE E SEGURANÇA</div>
+
+
+            <div style="border: 1px solid #cc5500; padding: 10px;">
+                <h3>Observação:</h3>
+                <p style="display: none"> </p>
+                <P style="display: block">Fotos: </P>
+                <div class="gallery">
+
+                    <style>
+                        .item img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    </style>
+
+                    <div class="item">
+                        <img src="https://Salexpress.com/aplicativorelatorios/view/uploads/682f1fd3ec92e.jpg" alt="">
+                        <p>Extintores sem evidência de verificação mensal </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <div class="section-title">OPERACIONAL</div>
+
+
+            <div style="border: 1px solid #cc5500; padding: 10px;">
+                <h3>Observação:</h3>
+                <p style="display: block">
+                <ol>
+                    <li>Tamarine (alimento) armazenado em posi&ccedil;&atilde;o de quarenta medicamentos-
+                        necess&aacute;rio realizar transfer&ecirc;ncia para sala de alimentos;</li>
+                    <li>Sala de alimento com ocupa&ccedil;&atilde;o 100%, visto que durante a visita verificado 2
+                        paletes para armazenar;</li>
+                    <li>&Aacute;rea de armazenagem medicamentos com ocupa&ccedil;&atilde;o 100%;</li>
+                    <li>&Aacute;rea de quarenta medicamentos com apenas 5 posi&ccedil;&otilde;es livres para itens de
+                        quarenta (devolu&ccedil;&atilde;o);</li>
+                    <li>6 posi&ccedil;&otilde;es de quarenta de medicamentos sendo utilizadas por outro cliente
+                        (sample4doc);</li>
+                    <li>&Aacute;rea de armazenamento de Cosm&eacute;ticos com parte sendo utilizada para armazenagem de
+                        medicamentos Theraskin;</li>
+                    <li>25 Posi&ccedil;&otilde;es de Cosm&eacute;ticos sendo utilizadas para medicamentos;</li>
+                    <li>22 Posi&ccedil;&otilde;es de Cosm&eacute;ticos sendo utilizadas para Cosm&eacute;ticos;</li>
+                    <li>17 posi&ccedil;&otilde;es livres na &aacute;rea de Cosm&eacute;ticos;</li>
+                    <li>3 posi&ccedil;&otilde;es sendo utilizadas na &aacute;rea de quarenta Cosm&eacute;ticos;</li>
+                    <li>Estoque limpo e organizado, necess&aacute;rio realizar movimenta&ccedil;&atilde;o f&iacute;sica
+                        e sistema simultanea;</li>
+                    <li>&Aacute;rea de n&atilde;o conformes 100% ocupado, sendo utilizado paletes extras para armazenar
+                        ( na &aacute;rea o maior volume &eacute; de Hypera e Galderma);</li>
+                </ol>
+                </p>
+                <P style="display: none">Fotos: </P>
+                <div class="gallery">
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section">
+            <div class="section-title">Assinatura Digital</div>
+
+            <div class="assinatura-container">
+                <div class="selo">
+                    <img src="https://Salexpress.com/assets/images/fvincon.png" alt="Selo de Verificação">
+                </div>
+                <div class="assinatura-dados">
+                    <p><span>Nome:</span> Maria Eduarda Bonchristiani </p>
+                    <p><span>Data:</span> 22/05/2025 </p>
+                    <p style="font-size: 8px;">Assinado pela Salexpress.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+# fly.toml app configuration file generated for api-Salexpress3-little-sea-9182 on 2025-11-26T11:25:50-03:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'api-Salexpress3-little-sea-9182'
+primary_region = 'gru'
+
+[build]
+  dockerfile = 'Dockerfile'
+
+[http_service]
+  internal_port = 8000
+  force_https = true
+  auto_stop_machines = 'stop'
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1
+
+[deploy]
+  release_command = "alembic upgrade head"

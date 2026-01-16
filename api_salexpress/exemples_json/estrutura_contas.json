@@ -1,0 +1,61 @@
+{
+    "tyoe": "empresa",
+    "pf": {
+        "nome": "João da Silva",
+        "cpf": "123.456.789-00",
+        "telefone": "(11) 1234-5678",
+        "Empresa a que trabalha": "Empresa X",
+        "email": "marcosmachadodev@gmail.com",
+        "nascimento": "01/01/2000",
+        "endereco": {
+            "cidade": "São Paulo",
+            "estado": "SP"
+        },
+        "password_user": "123456",
+        "permissões": [
+            "master"
+        ],
+        "autorizacoes": [
+            "autorizacao1",
+            "autorizacao2",
+            "autorizacao3"
+        ],
+        "certificados": [
+            "certificado1",
+            "certificado2",
+            "certificado3"
+        ],
+        "tipo_consta": 0
+    },
+    "pj": {
+        "id_user_pf": "1",
+        "CNPJ": "12.345.678/0001-00",
+        "Razao_social": "Empresa X",
+        "nome_fantasia": "Empresa X",
+        "Site": "www.empresaX.com.br",
+        "cnae_primario": "1234-5/00",
+        "canae_secundario": "1234-5/00",
+        "endereco": {
+            "cep": "12345-678",
+            "logradouro": "Rua X",
+            "numero": "123",
+            "bairro": "Bairro X",
+            "cidade": "São Paulo",
+            "estado": "SP"
+        },
+        "tipo_empresa": "MEI",
+        "segmento_empresa": "Tecnologia",
+        "inscricao_municipal": "123456",
+        "autorizacoes": [
+            "autorizacao1",
+            "autorizacao2",
+            "autorizacao3"
+        ],
+        "certificados": [
+            "certificado1",
+            "certificado2",
+            "certificado3"
+        ],
+        "outras_infos": "Outras informações"
+    }
+}

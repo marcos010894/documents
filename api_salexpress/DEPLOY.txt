@@ -1,0 +1,137 @@
+================================================================================
+                    GUIA DE DEPLOY - API Salexpress
+================================================================================
+
+📦 DEPLOY MANUAL NO FLY.IO
+================================================================================
+
+1. VERIFICAR BRANCH ATUAL
+   $ git branch
+   $ git checkout homolog-api  # ou a branch que você quer deployar
+
+2. FAZER DEPLOY
+   $ fly deploy
+
+3. VER LOGS APÓS DEPLOY
+   $ fly logs
+
+4. VERIFICAR STATUS
+   $ fly status
+
+5. ABRIR APP NO NAVEGADOR
+   $ fly open
+
+
+📋 COMANDOS ÚTEIS DO FLY.IO
+================================================================================
+
+# Listar todos os apps
+$ fly apps list
+
+# Deploy para um app específico
+$ fly deploy --app nome-do-app
+
+# Ver logs em tempo real
+$ fly logs -a nome-do-app
+
+# Ver informações do app
+$ fly status -a nome-do-app
+
+# Acessar o console do app
+$ fly ssh console -a nome-do-app
+
+# Ver variáveis de ambiente
+$ fly secrets list
+
+# Adicionar variável de ambiente
+$ fly secrets set NOME_VARIAVEL=valor
+
+# Remover variável de ambiente
+$ fly secrets unset NOME_VARIAVEL
+
+# Escalar app (mudar máquina)
+$ fly scale vm shared-cpu-1x --memory 256
+
+# Reiniciar app
+$ fly apps restart
+
+
+🌿 WORKFLOW DE BRANCHES
+================================================================================
+
+BRANCH HOMOLOG-API (Homologação/Testes)
+----------------------------------------
+1. Fazer mudanças no código
+2. Commit e push:
+   $ git add .
+   $ git commit -m "feat: sua feature"
+   $ git push origin homolog-api
+
+3. Deploy manual:
+   $ git checkout homolog-api
+   $ fly deploy
+
+
+BRANCH MAIN (Produção)
+----------------------
+1. Merge da homolog-api para main:
+   $ git checkout main
+   $ git merge homolog-api
+   $ git push origin main
+
+2. Deploy manual:
+   $ git checkout main
+   $ fly deploy --app nome-app-producao
+
+
+⚠️ IMPORTANTE
+================================================================================
+
+❌ O Fly.io NÃO faz deploy automático ao fazer push
+✅ Você SEMPRE precisa rodar 'fly deploy' manualmente
+✅ Cada branch pode ter seu próprio app no Fly.io
+✅ O deploy usa o código ATUAL da branch em que você está
+
+
+🔧 TROUBLESHOOTING
+================================================================================
+
+PROBLEMA: Deploy falhou
+SOLUÇÃO: 
+$ fly logs
+$ fly status
+# Verifique os logs e corrija os erros
+
+PROBLEMA: App não está respondendo
+SOLUÇÃO:
+$ fly status  # Ver se está rodando
+$ fly apps restart  # Reiniciar
+
+PROBLEMA: Erro de memória
+SOLUÇÃO:
+$ fly scale vm shared-cpu-1x --memory 512  # Aumentar memória
+
+PROBLEMA: Variável de ambiente não está funcionando
+SOLUÇÃO:
+$ fly secrets list  # Ver as secrets
+$ fly secrets set NOME_VAR=valor  # Adicionar/atualizar
+
+
+📞 LINKS ÚTEIS
+================================================================================
+
+Dashboard Fly.io: https://fly.io/dashboard
+Documentação: https://fly.io/docs
+Status: https://status.flyio.net
+
+
+💡 DICAS
+================================================================================
+
+✅ Sempre teste na branch homolog-api antes de ir para main
+✅ Use 'fly logs' para debugar problemas
+✅ Mantenha as secrets sempre atualizadas
+✅ Documente mudanças importantes no CHANGELOG
+✅ Verifique o status após cada deploy
+
+================================================================================

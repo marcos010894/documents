@@ -1,0 +1,50 @@
+[{
+        "path": "src/pagesAndComponents/",
+        "type": "pasta",
+        "title": "Metrics1",
+        "children": [{
+                "path": "src/pagesAndComponents/painel-ged/",
+                "type": "pasta",
+                "title": "Metrics2",
+                "children": [{
+                    "path": "src/pagesAndComponents/painel-ged/pages/",
+                    "type": "pasta",
+                    "title": "Metrics3",
+                    "children": [{
+                        "path": "src/pagesAndComponents/painel-ged/pages/metrics.tsx",
+                        "type": "file",
+                        "title": "metrics.tsx",
+                        "filePath": "src/pagesAndComponents/painel-ged/pages/metrics.tsx"
+                    }]
+                }]
+            },
+            {
+                "path": "src/pagesAndComponents/painel-ged/",
+                "type": "pasta",
+                "title": "Metrics2",
+                "children": [{
+                    "path": "src/pagesAndComponents/painel-ged/pages/",
+                    "type": "pasta",
+                    "title": "Metrics3",
+                    "children": [{
+                        "path": "src/pagesAndComponents/painel-ged/pages/metrics.tsx",
+                        "type": "file",
+                        "title": "metrics.tsx",
+                        "filePath": "src/pagesAndComponents/painel-ged/pages/metrics.tsx"
+                    }]
+                }]
+            }
+        ]
+    }, {
+        "path": "src/",
+        "type": "pasta",
+        "title": "Metrics3",
+        "children": [{
+            "path": "src/metrics.tsx",
+            "type": "file",
+            "title": "metrics.tsx",
+            "filePath": "src/metrics.tsx"
+        }]
+    }
+
+]
