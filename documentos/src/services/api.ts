@@ -11,7 +11,7 @@ export const api = () => {
   if (isLocalhost) {
     base = "http://127.0.0.1:8000/api/"
   } else {
-    base = "http://127.0.0.1:8000/api/"
+    base = "https://api-globaltty3-little-sea-9182.fly.dev/api/"
   }
   const api = axios.create({
     baseURL: base, // Substitua pela sua URL
