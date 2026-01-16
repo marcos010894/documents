@@ -21,6 +21,7 @@ import { STATUS_OPTIONS, getStatusColor, getStatusIcon, getStatusLabel, buildSta
 import { storageApi } from "../../../services/storageApi";
 import { followDocumentApi, Seguidor, UsuarioAtualSegue } from "../../../services/followDocumentApi";
 import { hasPermission } from "../../../hooks/useCollaboratorPermissions";
+import { API_BASE_URL } from "../../../config/api";
 
 interface FileItem {
     id: string;
@@ -103,7 +104,6 @@ const Documents = () => {
 
             // Codificar o email para URL
             const encodedEmail = encodeURIComponent(userEmail);
-            const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000';
             const response = await fetch(`${API_BASE_URL}/api/v1/shares/shared_with_me/by-email/${encodedEmail}`);
 
             if (!response.ok) {
