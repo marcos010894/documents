@@ -16,10 +16,10 @@ export const uploadImage = async (file: File, axiosInstance: AxiosInstance): Pro
     throw new Error("Tipo de arquivo não suportado");
   }
 
-  // Tamanho máximo (5MB)
-  const MAX_SIZE = 5 * 1024 * 1024;
+  // Tamanho máximo (1GB)
+  const MAX_SIZE = 1024 * 1024 * 1024;
   if (file.size > MAX_SIZE) {
-    toast.error(`Tamanho máximo permitido: ${MAX_SIZE / (1024 * 1024)}MB`);
+    toast.error(`Tamanho máximo permitido: ${MAX_SIZE / (1024 * 1024 * 1024)}GB`);
     throw new Error("Arquivo muito grande");
   }
 
